@@ -1,0 +1,14 @@
+name: ws_ferries_r_01_raw_data_download_and_write
+title: WS Ferries R 01 Raw Data Download and Write
+username: katie.masiello@posit.co
+account: katie.masiello@posit.co
+server: pub.current.posit.team
+hostUrl: https://pub.current.posit.team/__api__
+appId: 71
+bundleId: 211
+url: https://pub.current.posit.team/content/4f060e6b-53a5-4de9-ad9b-9497a7e68489/
+version: 1
+quarto_version: 1.4.555
+quarto_engines: knitr
+asMultiple: FALSE
+asStatic: FALSE

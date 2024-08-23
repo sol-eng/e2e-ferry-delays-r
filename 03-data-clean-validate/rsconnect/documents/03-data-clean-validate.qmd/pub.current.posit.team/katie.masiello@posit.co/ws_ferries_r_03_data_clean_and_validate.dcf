@@ -1,0 +1,14 @@
+name: ws_ferries_r_03_data_clean_and_validate
+title: WS Ferries R 03 Data Clean and Validate
+username: katie.masiello@posit.co
+account: katie.masiello@posit.co
+server: pub.current.posit.team
+hostUrl: https://pub.current.posit.team/__api__
+appId: 73
+bundleId: 139
+url: https://pub.current.posit.team/content/3c3255b6-60ea-4258-9202-52bdbb1b6421/
+version: 1
+quarto_version: 1.4.553
+quarto_engines: knitr
+asMultiple: FALSE
+asStatic: FALSE

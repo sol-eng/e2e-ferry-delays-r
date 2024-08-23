@@ -1,0 +1,14 @@
+name: ws_ferries_r_06_app_usage_monitoring
+title: WS Ferries R 06 App Usage Monitoring
+username: katie.masiello@posit.co
+account: katie.masiello@posit.co
+server: pub.current.posit.team
+hostUrl: https://pub.current.posit.team/__api__
+appId: 78
+bundleId: 144
+url: https://pub.current.posit.team/content/19a3d8f1-e004-4269-82cb-366204c2f31c/
+version: 1
+quarto_version: 1.4.553
+quarto_engines: knitr
+asMultiple: FALSE
+asStatic: FALSE
