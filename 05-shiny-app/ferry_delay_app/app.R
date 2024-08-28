@@ -37,7 +37,9 @@ df_name <- "modeldata_validated"
 
 board <- board_connect()
 
-ferry_weather <- board |> pin_read("katie.masiello@posit.co/modeldata_validated")
+ferry_weather <- board |> pin_read("katie.masiello@posit.co/modeldata_validated") |> 
+  mutate(arriving = str_to_title(str_replace_all(arriving, "_", " ")),
+         departing = str_to_title(str_replace_all(departing, "_", " ")))
 
 # Get station lat/long
 station_latlong <- board |> pin_read("katie.masiello@posit.co/terminallocations")
@@ -212,23 +214,17 @@ server <- function(input, output, session) {
       delay = 0
     )
     
-    
-    # result <- predict(endpoint, 
-    #         new_ferry_data, 
-    #         httr::add_headers(Authorization = paste("Key", 
-    #                                                 Sys.getenv("CONNECT_API_KEY"))))$.pred_class
-    
-    result <- predict(endpoint, 
-                      new_ferry_data, 
-                      httr::add_headers(Authorization = paste("Key", 
-                                                              Sys.getenv("CONNECT_API_KEY"))))$.pred_class
+    result <- predict(endpoint,
+            new_ferry_data,
+            httr::add_headers(Authorization = paste("Key",
+                                                    Sys.getenv("CONNECT_API_KEY"))))$.pred_class
     
     # add a STDOUT log to indicate end of API query
     time2 <- Sys.time()
-    message("received model API call: ", time2, " on process: ", Sys.getpid(), " for user: ", user, " with session_id: ", session_id)
+    message("received model API call: ",  time2, " on process: ", Sys.getpid(), " for user: ", user, " with session_id: ", session_id)
     message("it took ", difftime(time2,time1), " " , units(difftime(time2,time1)))
-
     
+    result
   })
   
   delay_color <- reactive({
