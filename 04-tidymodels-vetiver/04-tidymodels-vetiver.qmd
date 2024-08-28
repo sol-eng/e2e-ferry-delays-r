@@ -25,46 +25,6 @@ The goals of this activity are to:
 6.  Use the pinned models to serve a plumber API hosted on Posit Connect.
 7.  Use the `vetiver` and `pins` package to version and monitor the performance of the models over time.
 
-## Task 0 - Create and Save a Posit Connect API Key
-
-Before starting this activity, we need to create and save a Posit Connect API key in our environment. This API key identifies you to Connect, allowing you to publish or interact with privileged content if you have the necessary permissions. **YOU SHOULD NEVER ADD YOUR API KEY TO YOUR SOURCE CODE!!!** An API key is like a password, and you should take the necessary steps to secure it. One of those methods is by adding it as an environment variable. You can do this by adding the variable/API key to your `.Renviron` file. This file is interpreted by R every time you start a new session. The `usethis` R packabe makes it super easy to add environment variables.
-
-```{r}
-#| eval: false
-
-# Open your .Renviron file
-usethis::edit_r_environ()
-```
-
-Once you run the above command, you should see a new file open up in RStudio. This is your `.Renviron` file and is usually located in your home (\~) directory. Before we set the variable, we first need to obtain an API key from Connect. Follow the steps below:
-
-1.  Navigate to Posit Connect (https://pub.ferryland.posit.team).
-2.  Click your username in the top right corner.
-3.  Select **API Keys**
-4.  Select **+New API Key**
-5.  Name it whatever you like. `Connect-API-Key` is a good option.
-6.  Copy the new API key. **DON'T LOSE IT!** If you do lose it, you can create another one.
-
-Navigate back to your `.Renviron` file and add the following line. It's always a good idea to add an additional blank line at the end of your `.Renviron` file. Let's also add the CONNECT_SERVER URL just for good measure!
-
-```         
-CONNECT_API_KEY=paste-your-api-key-here
-CONNECT_SERVER=https://pub.ferryland.posit.team
-```
-
-Now you can close the `.Renviron` file and restart your R session (Session–\>Restart R) so that the API key varialble get's added to our environment. To confirm it worked, try running the following code:
-
-```{r}
-
-# Check if CONNECT_API_KEY is added to environment
-Sys.getenv("CONNECT_API_KEY")
-
-# Check if CONNECT_SERVER is added to environment
-Sys.getenv("CONNECT_SERVER")
-```
-
-You should see the API key in the console. If not, please raise your hand and we'll be around to help you out!
-
 ## Task 1 - Create a tidymodel
 
 ```{r}
@@ -369,7 +329,6 @@ APIs are a great way for users, applications, or other systems to interact with 
 #| label: create-api
 
 # Create API from pinned model using vetiver
-#  Swap out "____" for your username on Connect.
 vetiver_deploy_rsconnect(board = board, name = "katie.masiello@posit.co/ferry_model")
 
 ```

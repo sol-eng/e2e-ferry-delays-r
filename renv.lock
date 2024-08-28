@@ -4,11 +4,7 @@
     "Repositories": [
       {
         "Name": "CRAN",
-        "URL": "https://pkg.ferryland.posit.team/cran/latest"
-      },
-      {
-        "Name": "INTERNAL",
-        "URL": "https://pkg.ferryland.posit.team/internal/latest"
+        "URL": "https://pkg.current.posit.team/cran/latest"
       }
     ]
   },
@@ -49,7 +45,7 @@
       "Package": "KernSmooth",
       "Version": "2.23-24",
       "Source": "Repository",
-      "Repository": "CRAN",
+      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
       "Requirements": [
         "R",
         "stats"
@@ -60,7 +56,7 @@
       "Package": "MASS",
       "Version": "7.3-61",
       "Source": "Repository",
-      "Repository": "CRAN",
+      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
       "Requirements": [
         "R",
         "grDevices",
@@ -1778,7 +1774,7 @@
       "Package": "nlme",
       "Version": "3.1-165",
       "Source": "Repository",
-      "Repository": "CRAN",
+      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
       "Requirements": [
         "R",
         "graphics",
@@ -2793,7 +2789,7 @@
       "Package": "survival",
       "Version": "3.7-0",
       "Source": "Repository",
-      "Repository": "CRAN",
+      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
       "Requirements": [
         "Matrix",
         "R",

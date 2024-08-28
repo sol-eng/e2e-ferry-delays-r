@@ -9,7 +9,6 @@ format:
     code-summary: "Show Code"
     code-tools: true
     code-link: true
-editor: visual
 editor_options: 
   chunk_output_type: console
   canonical: true
@@ -19,30 +18,24 @@ editor_options:
 
 The goals of this activity are to:
 
--   Use `{httr2}` to download the raw Washington State Ferries data and
-    weather data, which is used throughout this Workshop
+-   Use `{httr2}` to download the raw Washington State Ferries data and weather data, which is used throughout this Workshop
 -   Write the raw data to a database
 -   Use a simple threshold alert to trigger a notification email
--   Publish this notebook to Posit Connect and put it on a rendering
-    schedule so database updates happen automatically
--   See some general logging examples that make your scheduled reports
-    more useful
+-   Publish this notebook to Posit Connect and put it on a rendering schedule so database updates happen automatically
+-   See some general logging examples that make your scheduled reports more useful
 
-This will give you experience setting up a repeatable workflow for
-populating production data sources.
+This will give you experience setting up a repeatable workflow for populating production data sources.
 
 ## Data sources
 
-We are using data sets from two main sources, with the aim of gathering
-historical sailings, combining with historical weather, and developing a
-model to predict whether a future sailing will be delayed.
+We are using data sets from two main sources, with the aim of gathering historical sailings, combining with historical weather, and developing a model to predict whether a future sailing will be delayed.
 
 ### From WSDOT Traveler Information API
 
 (<https://wsdot.wa.gov/traffic/api/>)
 
 | Endpoint               | Description                                                                                           | API                                                                                                                                     |
-|---------------|------------------------|---------------------------------|
+|------------------|-----------------------|--------------------------------|
 | **Vessel verbose**     | Reference details about each ferry in the fleet, including name, model, and capacity                  | `https://www.wsdot.wa.gov/ferries/api/vessels/ rest/vesselverbose?apiaccesscode={WSDOT_ACCESS_CODE}`                                    |
 | **Vessel history**     | Historical sailings, including scheduled actual departure time                                        | `https://www.wsdot.wa.gov/ferries/api/vessels/ rest/vesselhistory/{VESSELNAME}/{DATESTART}/{DATEEND}?apiaccesscode={WSDOT_ACCESS_CODE}` |
 | **Terminal locations** | Terminal names and locations, including latitude and longitude, which we'll need for the weather data | `https://www.wsdot.wa.gov/ferries/api/terminals/ rest/terminallocations?apiaccesscode={WSDOT_ACCESS_CODE}`                              |
@@ -52,23 +45,18 @@ model to predict whether a future sailing will be delayed.
 ([https://open-meteo.com/en/docs/](https://open-meteo.com/en/docs/historical-weather-api/))
 
 | Endpoint               | Description                                                                       | API                                                       |
-|----------------|---------------------------------|-----------------------|
+|------------------|--------------------------------|-----------------------|
 | **Historical weather** | Historical hourly weather at a specified latitude and longitude over a date range | `https://archive-api.open-meteo.com/v1/ archive?{params}` |
 
-We will use the `{httr2}` package to download the data from these API
-sources.
+We will use the `{httr2}` package to download the data from these API sources.
 
 ## Task 1 - Get and set WSDOT environment variable
 
 🔄 Task
 
-We are using an environment variable to access the WSDOT API called
-**`WSDOT_ACCESS_CODE`**. Visit <https://wsdot.wa.gov/traffic/api/> to
-get an API key for the use during this workshop.
+We are using an environment variable to access the WSDOT API called **`WSDOT_ACCESS_CODE`**. Visit <https://wsdot.wa.gov/traffic/api/> to get an API key for the use during this workshop.
 
-To save this environment variable in your local development environment,
-add it to your `.Renviron` file. To do this, run the following command
-in your R console:
+To save this environment variable in your local development environment, add it to your `.Renviron` file. To do this, run the following command in your R console:
 
 ```{r}
 #| eval: false
@@ -80,13 +68,9 @@ usethis::edit_r_environ()
 WSDOT_ACCESS_CODE=PASTE_VALUE_HERE
 ```
 
-**Don't forget to restart your session to load your revised
-environment.**
+**Don't forget to restart your session to load your revised environment.**
 
-💡 Remember, the `.Renviron` file does not get deployed with this
-content, and you should not commit it to git. It is a local file that
-sets environment variables for your R session. You will be able to set
-this variable in the "Vars" pane on Connect when you deploy.
+💡 Remember, the `.Renviron` file does not get deployed with this content, and you should not commit it to git. It is a local file that sets environment variables for your R session. You will be able to set this variable in the "Vars" pane on Connect when you deploy.
 
 Now let's set sail!
 
@@ -112,22 +96,17 @@ library(ferryfairy) #⛴️ A custom package we wrote that is served by Package 
 
 Get the following data set:
 
--   **Vessel Verbose**: the
-    `https://www.wsdot.wa.gov/Ferries/API/Vessels/rest/vesselverbose`
-    endpoint contains data about the ferries in the fleet.
+-   **Vessel Verbose**: the `https://www.wsdot.wa.gov/Ferries/API/Vessels/rest/vesselverbose` endpoint contains data about the ferries in the fleet.
 
-Use `{httr2}` to download the vessel verbose data set from the WSDOT
-API.
+Use `{httr2}` to download the vessel verbose data set from the WSDOT API.
 
 This API takes the form:
 
 `https://www.wsdot.wa.gov/ferries/api/vessels/rest/vesselverbose?apiaccesscode={WSDOT_ACCESS_CODE}`
 
-With `{httr2}` we compose the API request as
-`<base url>/<path (aka endpoint)>/<query parameters>`
+With `{httr2}` we compose the API request as `<base url>/<path (aka endpoint)>/<query parameters>`
 
-💡 Don't split hairs over what part of your string is captured as the
-base URL versus the path. Do what makes you happy.
+💡 Don't split hairs over what part of your string is captured as the base URL versus the path. Do what makes you happy.
 
 ```{r}
 #| label: download raw vessel data
@@ -165,27 +144,13 @@ vesselinfo_raw <- response_body |> unnest(Class) |>  clean_names()
 vesselinfo_raw
 ```
 
-
 ## Task 3 - Connect to the database
 
 🔄 Task
 
-Create a database connection using the database connection details
-defined for you by your IT Admin (Workshop Instructors). Avoid
-hard-coding in any credentials. We're using environment variables here.
+Create a database connection using the database connection details defined for you by your IT Admin (Workshop Instructors). Avoid hard-coding in any credentials. We're using environment variables here.
 
-We discussed that a database connection can be made using the generic
-`odbc` package, or a database-specific R package, such as `RPostgres`.
-The `RPostgres` package is DBI-compliant and is built specifically for
-PosgreSQL databases. Performance may be faster (particularly for writing
-data!) than using the generic `odbc` package, and there are more
-translations available, meaning more dplyr verbs will be available.
-*However,* because we are in a learning environment for this Workshop,
-we are choosing to use the `odbc` package so that we can see the
-database and it's table appear in the RStudio Connections pane. This is
-a quality of life tradeoff, but if you're doing intensive database work
-back in the real world, we recommend using a database-specific package,
-if available.
+We discussed that a database connection can be made using the generic `odbc` package, or a database-specific R package, such as `RPostgres`. The `RPostgres` package is DBI-compliant and is built specifically for PosgreSQL databases. Performance may be faster (particularly for writing data!) than using the generic `odbc` package, and there are more translations available, meaning more dplyr verbs will be available. *However,* because we are in a learning environment for this Workshop, we are choosing to use the `odbc` package so that we can see the database and it's table appear in the RStudio Connections pane. This is a quality of life tradeoff, but if you're doing intensive database work back in the real world, we recommend using a database-specific package, if available.
 
 ```{r}
 #| label: make database connection
@@ -240,37 +205,22 @@ board |> pin_write(vesselinfo_raw)
 ## Task 5 - Get and write the other data sets
 
 ::: callout-note
-This task is similar to Tasks 3-4 from a Workshop perspective. We will
-speed through this code and pick up again on the next Task for new
-material.
+This task is similar to Tasks 3-4 from a Workshop perspective. We will speed through this code and pick up again on the next Task for new material.
 :::
 
 Now we get the following additional data sets:
 
--   **Vessel History**: the
-    `https://www.wsdot.wa.gov/Ferries/API/Vessels/rest/vesselhistory`
-    endpoint contains historical data about sailings.
+-   **Vessel History**: the `https://www.wsdot.wa.gov/Ferries/API/Vessels/rest/vesselhistory` endpoint contains historical data about sailings.
 
--   **Terminal locations**: the
-    `https://www.wsdot.wa.gov/Ferries/API/terminals/rest/terminallocations`
-    endpoint contains information about ferry terminals locations.
+-   **Terminal locations**: the `https://www.wsdot.wa.gov/Ferries/API/terminals/rest/terminallocations` endpoint contains information about ferry terminals locations.
 
--   **Weather data**: the
-    `https://archive-api.open-meteo.com/v1/archive?{params}` endpoint
-    contains historical hourly weather information for a location and
-    date, including things that may affect the timeliness of our ferry
-    departure, such as wind speed, cloud cover, and precipitation.
+-   **Weather data**: the `https://archive-api.open-meteo.com/v1/archive?{params}` endpoint contains historical hourly weather information for a location and date, including things that may affect the timeliness of our ferry departure, such as wind speed, cloud cover, and precipitation.
 
 ### Vessel history
 
-We'll query 30 days looking back from today's date, and use the vessel
-names we retrieved from the Vessel Verbose endpoint to query the
-`vesselhistory` endpoint for each vessel name.
+We'll query 30 days looking back from today's date, and use the vessel names we retrieved from the Vessel Verbose endpoint to query the `vesselhistory` endpoint for each vessel name.
 
-Rather than manually repeating the API call for each vessel though,
-we'll use a function we wrote into the `ferryfairy` package that
-iterates the API call over the list of vessel names using the same
-technique as above with `httr2`.
+Rather than manually repeating the API call for each vessel though, we'll use a function we wrote into the `ferryfairy` package that iterates the API call over the list of vessel names using the same technique as above with `httr2`.
 
 ```{r}
 #| label: download raw vessel history
@@ -290,9 +240,7 @@ vesselhistory_raw
 
 ### Terminal locations
 
-Again, to simplify things, we use a function in `ferryfairy` to retrieve
-latitude and longitudes for each terminal. The function is a wrapper
-around `httr2`.
+Again, to simplify things, we use a function in `ferryfairy` to retrieve latitude and longitudes for each terminal. The function is a wrapper around `httr2`.
 
 ```{r}
 #| label: download terminal locations data
@@ -303,12 +251,9 @@ terminallocations
 
 ### Weather data
 
-Similar to the approach used for retrieving Vessel History, we use a
-function in `ferryfairy` to call the weather API and iterate over all of
-the departing terminal locations.
+Similar to the approach used for retrieving Vessel History, we use a function in `ferryfairy` to call the weather API and iterate over all of the departing terminal locations.
 
-The weather API allows us to specify the data and format we want in the
-query. We will include:
+The weather API allows us to specify the data and format we want in the query. We will include:
 
 -   precipitation (inches)
 
@@ -322,10 +267,7 @@ query. We will include:
 
 -   Timezone: US/Pacific
 
-The Open Meteo API is available to use without an API key when used for
-educational purposes according to their [Terms of
-Use](https://open-meteo.com/en/terms). As such, queries are limited to
-less than 10,000 API calls per day, 5,000 per hour and 600 per minute.
+The Open Meteo API is available to use without an API key when used for educational purposes according to their [Terms of Use](https://open-meteo.com/en/terms). As such, queries are limited to less than 10,000 API calls per day, 5,000 per hour and 600 per minute.
 
 ```{r}
 #| label: download weather data
@@ -343,9 +285,7 @@ weather_terminal_history_raw
 
 ### Write the data to the database
 
-We'll use a helper function from `{ferryfairy}` for brevity. This is a
-wrapper around `dbWriteTable` and uses the same method we used above in
-writing `vesselinfo`.
+We'll use a helper function from `{ferryfairy}` for brevity. This is a wrapper around `dbWriteTable` and uses the same method we used above in writing `vesselinfo`.
 
 ```{r}
 #| label: write remaining data to database
@@ -372,32 +312,20 @@ board |> pin_write(weather_terminal_history_raw)
 
 ```
 
-
 ## Task 6 - Send an email alert if something is fishy 🐟
 
 🔄 Task
 
-We will publish this document and schedule it to run daily. However,
-what if there's something wrong with the data? We want to know about it!
+We will publish this document and schedule it to run daily. However, what if there's something wrong with the data? We want to know about it!
 
-Posit Connect has support for sending emails with Quarto:
-<https://docs.posit.co/connect/user/quarto/#email-customization>.
+Posit Connect has support for sending emails with Quarto: <https://docs.posit.co/connect/user/quarto/#email-customization>.
 
-The email subject and body are enclosed within `:::` divs and we specify
-that this document should render an email in the Quarto YAML block at
-the top of the document using `format: email`.
+The email subject and body are enclosed within `:::` divs and we specify that this document should render an email in the Quarto YAML block at the top of the document using `format: email`.
 
-💡 Consider `format: email` as an extension of the more general
-`format: html`. This means other YAML options pertinent to html outputs
-like `toc` and `code-fold` can still be used.
+💡 Consider `format: email` as an extension of the more general `format: html`. This means other YAML options pertinent to html outputs like `toc` and `code-fold` can still be used.
 
--   Assume that if fewer than 10 records are returned from any of the
-    API calls, there's an issue with the upstream data source and we
-    want to receive an email alert about it.
--   Do this by setting `send_email` to `TRUE` within a block called
-    `::: {email-scheduled}`. When the boolean is true, the email will be
-    sent; otherwise, it will be suppressed. See
-    <https://docs.posit.co/connect/user/quarto/#suppressing-email>
+-   Assume that if fewer than 10 records are returned from any of the API calls, there's an issue with the upstream data source and we want to receive an email alert about it.
+-   Do this by setting `send_email` to `TRUE` within a block called `::: {email-scheduled}`. When the boolean is true, the email will be sent; otherwise, it will be suppressed. See <https://docs.posit.co/connect/user/quarto/#suppressing-email>
 
 ### Define conditionality
 
@@ -429,10 +357,11 @@ send_email
 ⚠️ Ferry Project: There was an issue with the raw data.
 :::
 
-Fewer rows of raw data were retrieved than expected. The number of
-records are:
+Fewer rows of raw data were retrieved than expected. The number of records are:
 
 ```{r}
+#| echo: false
+
 glue("The following number of records were retrieved from the API sources: 
      
      {nrow(vesselinfo_raw)} rows of raw vessel data
@@ -449,22 +378,15 @@ glue("The following number of records were retrieved from the API sources:
 
 🔄 Task
 
-Make your scheduled reports work harder for you! Include information
-that you'll find useful to refer back to. Logging can be as basic or
-elaborate as you need.
+Make your scheduled reports work harder for you! Include information that you'll find useful to refer back to. Logging can be as basic or elaborate as you need.
 
 Lets include:
 
 -   A nicely formatted time stamp.
 
--   A summary the main actions taken in the report, such as how many
-    rows of data were downloaded, how many rows of data were written to
-    the database
+-   A summary the main actions taken in the report, such as how many rows of data were downloaded, how many rows of data were written to the database
 
-Hint: The `glue` package is helpful for combining text and variables.
-It's less work than stringing things together with `paste`. With
-`glue::glue()`, the syntax is
-`glue("Text with {<r expression or variable>}")`
+Hint: The `glue` package is helpful for combining text and variables. It's less work than stringing things together with `paste`. With `glue::glue()`, the syntax is `glue("Text with {<r expression or variable>}")`
 
 ```{r}
 #| label: logging
@@ -485,27 +407,12 @@ glue("Wrote the following to the database:
 
 🔄 Task
 
--   Connect your account on Posit Connect to Workbench (Tools > Global
-    Options > Publishing)
--   Use push-button publishing to publish this document, with source
-    code, to Connect, but remember, it is not good practice to bundle
-    your `.Renviron` file with your deployment. Once the code is
-    deployed to Connect, we will need to input our `WSDOT_API_KEY` in
-    the Connect "Vars" pane. Or we can publish the environment variable
-    value directly using
-    `rsconnect::deployApp(appFiles = c("01-raw-data-write.qmd", "mode_switch.png"), envVars = c("WSDOT_ACCESS_CODE"))`
--   Schedule it to run on a timescale that seems appropriate for the
-    data update cycle
+-   Connect your account on Posit Connect to Workbench (Tools \> Global Options \> Publishing)
+-   Use push-button publishing to publish this document, with source code, to Connect, but remember, it is not good practice to bundle your `.Renviron` file with your deployment. Once the code is deployed to Connect, we will need to input our `WSDOT_API_KEY` in the Connect "Vars" pane. Or we can publish the environment variable value directly using `rsconnect::deployApp(appFiles = c("01-raw-data-write.qmd", "mode_switch.png"), envVars = c("WSDOT_ACCESS_CODE"))`
+-   Schedule it to run on a timescale that seems appropriate for the data update cycle
 
-Note: Recall we specified our database connection details with
-environment variables. Typically when you publish content to Connect,
-you will also need to supply the environment variables using the "Vars"
-pane in Connect. For this workshop, these environment variables have
-already been stored on the Connect server for you so you won't need to
-do this step for this activity.
+Note: Recall we specified our database connection details with environment variables. Typically when you publish content to Connect, you will also need to supply the environment variables using the "Vars" pane in Connect. For this workshop, these environment variables have already been stored on the Connect server for you so you won't need to do this step for this activity.
 
 We'll do this task together as a group.
 
-For reference, the Connect User Guide provides instructions for
-publishing:
-<https://docs.posit.co/connect/user/publishing/#publishing-general>
+For reference, the Connect User Guide provides instructions for publishing: <https://docs.posit.co/connect/user/publishing/#publishing-general>
