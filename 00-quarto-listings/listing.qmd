@@ -1,0 +1,22 @@
+---
+title: End to end project artifacts for Washington State Ferries project
+format: 
+  html:
+    page-layout: full
+    title-block-banner: true
+    template-partials: 
+      - title-block.html
+listing: 
+  id: gallery
+  contents: content.yml
+  template: showcase.ejs
+resources:
+  - wenatchee.png
+---
+
+The project artifacts below represent the full development of a project, from initial data exploration, data cleaning and validation, model development and deployment, app development, and monitoring usage of our app. 
+
+::: {#gallery}
+
+::: 
+

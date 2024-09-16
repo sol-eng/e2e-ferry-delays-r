@@ -1,0 +1,11 @@
+project:
+  type: website
+
+website:
+  page-footer: 
+    center: Built with [Quarto](http://quarto.org)
+
+format: 
+  html:
+    theme: [cosmo, styles.scss]
+    toc: false

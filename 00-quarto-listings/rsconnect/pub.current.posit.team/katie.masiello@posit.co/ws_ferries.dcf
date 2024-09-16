@@ -1,0 +1,15 @@
+name: ws_ferries
+title: WS Ferries
+username: katie.masiello@posit.co
+account: katie.masiello@posit.co
+server: pub.current.posit.team
+hostUrl: https://pub.current.posit.team/__api__
+appId: 161
+bundleId: 346
+url: https://pub.current.posit.team/content/f6b2cd8d-5bd7-42ba-82cb-c25078918043/
+version: 1
+quarto_version: 1.4.555
+quarto_engines: markdown
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: listing_files
