@@ -21,6 +21,14 @@
         <div class="card-footer">
           <div class="view-app"><a href="<%- tile.url %>" target="_blank" class="btn btn-outline-primary">View Content</a>
           <a href="<%- tile.devurl %>" target="_blank" class="btn btn-outline-primary">Publisher's View</a></div>
+          
+          <% for (const tag of item.tags) { console.log(tag); %>
+          
+          <%# comment 
+          <div class="view-app" class="btn btn-outline-info">tag</div>
+          %>
+          <% } %>
+          
         </div>
       </div>
     <% } %>
