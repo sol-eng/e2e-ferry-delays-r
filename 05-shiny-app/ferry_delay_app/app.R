@@ -13,7 +13,7 @@ library(odbc)
 library(DBI)
 
 # API URL
-api_url <- "https://pub.current.posit.team/ferry_model"
+api_url <- "https://pub.current.posit.team/public/ferry_model"
 
 # Read Ferry Data Pin
 df_name <- "modeldata_validated"
