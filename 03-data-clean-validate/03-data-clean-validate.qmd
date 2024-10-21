@@ -32,46 +32,8 @@ Our conditions will send an email based on the the following:
 
 3.  `condition <- "OK"`: no issues
 
-## Task 1 - Define a "condition override" so we can manually trigger a condition and see the resulting email
 
-🔄 Task
-
-Use an environment variable called `CONDITION_OVERRIDE` to be used during development and testing which will:
-
--   prevent data from being written to the database
--   force the the corresponding conditional email to be send based on the selected condition
-
-The benefit of using an environment variable is that it can be set / modified in the "Vars" pane on Connect, meaning you can test different conditions without changing the deployed code.
-
-Our conditions are:
-
-1.  `condition <- "STOP"`: the size and shape of the data is not as expected; something is wrong with the input data so the processing of data is stopped and no production data is updated
-
-2.  `condition <- "WARN"`: data validation complete but had warnings
-
-3.  `condition <- "OK"`: no issues
-
-### Set environment variable locally
-
-To set this environment variable locally during development, add it to your `.Renviron` file. To do this, run the following command in your R console:
-
-```{r}
-#| eval: false
-
-usethis::edit_r_environ("project")
-```
-
-``` {.bash filename=".Renviron"}
-# file: either ~/.Renviron or .Renviron in the project root
-# set condition to either STOP, WARN, or OK to preview the conditional responses.
-CONDITION_OVERRIDE=STOP
-```
-
-**Don't forget to restart your session to load your revised environment.**
-
-💡 Remember, the `.Renviron` file does not get deployed with this content, and you should not commit it to git. It is a local file that sets environment variables for your R session. You will be able to set this variable in the "Vars" pane on Connect when you deploy the report if you want to implement an override.
-
-### Print a notification if an override is in place
+## Print a notification if an override is in place
 
 This will appear in the rendered report if an override is place.
 
@@ -88,7 +50,9 @@ Data not written to database but an email for condition {Sys.getenv('CONDITION_O
 
 ```
 
-## Task 2 - Read in raw data
+Value of `CONDITION_OVERRIDE` is `r Sys.getenv("CONDITION_OVERRIDE")`
+
+## Task 1 - Read in raw data
 
 ## Setup
 
@@ -153,7 +117,7 @@ vesselhistory_raw <- board |> pin_read("katie.masiello@posit.co/vesselhistory_ra
 weather_terminal_history_raw <- board |> pin_read("katie.masiello@posit.co/weather_terminal_history_raw")
 ```
 
-## Task 3 - Validate raw production data schema
+## Task 2 - Validate raw production data schema
 
 🔄 Task
 
@@ -264,7 +228,7 @@ stop_alert <- any((if(exists("condition")){condition == "STOP"}), Sys.getenv("CO
 
 ```
 
-## Task 4 - Clean and transform data
+## Task 3 - Clean and transform data
 
 🔄 Task
 
@@ -315,7 +279,7 @@ if (stop_alert != TRUE) {
 }
 ```
 
-## Task 5 - Validate the model data
+## Task 4 - Validate the model data
 
 🔄 Task
 
@@ -373,7 +337,7 @@ if (stop_alert != TRUE) {
   x_list <- get_agent_x_list(main_agent)
 }
 
-main_agent
+if (exists("main_agent")) {main_agent}
 ```
 
 ### Set `condition` to determine which email to send
@@ -394,7 +358,7 @@ if (stop_alert != TRUE) {
 }
 ```
 
-## Task 6 - Remove failed records from data set
+## Task 5 - Remove failed records from data set
 
 🔄 Task
 
@@ -409,7 +373,7 @@ if (stop_alert != TRUE) {
 }
 ```
 
-## Task 7 - Write cleaned and validated data to database
+## Task 6 - Write cleaned and validated data to database
 
 🔄 Task
 
@@ -436,7 +400,7 @@ if (stop_alert != TRUE & !Sys.getenv("CONDITION_OVERRIDE") %in% conditions) {
 board |> pin_write(modeldata_validated)
 ```
 
-## Task 8 - Send Conditional Email
+## Task 7 - Send Conditional Email
 
 🔄 Task
 
