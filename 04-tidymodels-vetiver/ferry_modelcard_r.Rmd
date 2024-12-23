@@ -3,10 +3,6 @@ title: "Model Card: Ferry Model - R Focus"
 date: '`r Sys.Date()`'
 output: 
   html_document
-params:
-    board: !r pins::board_connect()
-    name: ryjohnson09/ferry_model
-    version: NULL
 ---
 
 ```{r setup, include=FALSE}
@@ -15,8 +11,8 @@ library(vetiver)
 library(pins)
 library(yardstick)
 knitr::opts_chunk$set(echo = FALSE)
-v <- vetiver_pin_read(params$board, params$name, version = params$version)
-v_meta <- pin_meta(params$board, params$name)
+v <- vetiver_pin_read(board_connect(), "katie.masiello@posit.co/ferry_model", version = 147)
+v_meta <- pin_meta(board_connect(), "katie.masiello@posit.co/ferry_model")
 theme_set(theme_light())
 ```
 

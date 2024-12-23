@@ -8,7 +8,7 @@ editor_options:
 
 ## Goals
 
-The goals of this activity are to:
+The goals of this notebook are to:
 
 -   Create two models using the `tidymodels` framework that predict if a Seattle Ferry will depart on time or be delayed from a specific station.
 -   Save a model as a pin to Posit Connect using the `vetiver` package.
@@ -25,10 +25,12 @@ The goals of this activity are to:
 6.  Use the pinned models to serve a plumber API hosted on Posit Connect.
 7.  Use the `vetiver` and `pins` package to version and monitor the performance of the models over time.
 
-## Task 1 - Create a tidymodel
+## Create a tidymodel
 
 ```{r}
 #| label: setup
+#| warning: false
+#| message: false
 
 library(tidyverse)
 library(pins)
@@ -44,17 +46,9 @@ library(DBI)
 library(usethis)
 ```
 
-[Tidymodels](https://www.tidymodels.org/) is a collection of R packages for modeling and machine learning using [tidyverse](https://www.tidyverse.org/) principles. While this workshop is **not** a modeling workshop, to demonstrate the utility of the `vetiver`, we need to create a model.
+For this task, we will train and fit a logistic regression model to predict whether a Seattle Ferry departs a station on time or is delayed.
 
-For this activity, we will train and fit a logistic regression model to predict whether a Seattle Ferry departs a station on time or is delayed. Later on, we will create another model using xgboost.
-
-🔄 Tasks
-
--   Explore the `ferry-weather` dataset. Use any method you'd like to understand the data. Try functions like `glimpse()`, `str()`, and `View()`.
-
--   Create a logistic regression tidymodel that predicts `delay_status`.
-
-#### Read and Explore the `ferry-weather` dataset
+### Read the `ferry-weather` dataset
 
 ```{r}
 #| label: read-data
@@ -88,22 +82,7 @@ ferry_weather <- board |> pin_read("katie.masiello@posit.co/modeldata_validated"
 ```
 
 
-```{r}
-#| label: explore-data
-
-# Use the space below to explore the ferry-weather dataset
-# Try functions like glimpse(), str(), skim(), and View()
-
-glimpse(ferry_weather)
-str(ferry_weather)
-skim(ferry_weather)
-View(ferry_weather)
-
-```
-
-#### Prep Data for Modeling
-
-Sometimes, you may need to transform the original dataset to make it conducive to modeling. In the below code cell, read the comment above each bit of code to understand what types of transformations were conducted.
+### Prep Data for Modeling
 
 ```{r}
 #| label: prep-data
@@ -166,9 +145,8 @@ ferry_weather_prepped <- ferry_weather |>
 
 ```
 
-Feel free to explore the prepped dataset!
 
-#### Split Data
+### Split Data
 
 For modeling, you often split your data into a **training and testing** dataset. Before we do that, we'll first extract the last 500 rows, which will be used later on for model monitoring.
 
@@ -186,7 +164,7 @@ train_data <- training(data_split)
 test_data  <- testing(data_split)
 ```
 
-#### Create the Recipe
+### Create the Recipe
 
 ```{r}
 #| label: create-recipe
@@ -206,7 +184,7 @@ ferry_rec <-
   step_dummy(all_nominal_predictors())
 ```
 
-#### Define Model Type
+### Define Model Type
 
 We'll first use logistic regression via *generalized linear model*, or glm. This method is used for predicting binary outcomes (delayed vs on-time).
 
@@ -220,7 +198,7 @@ ferry_mod_lr <-
 
 ```
 
-#### Create the Workflow
+### Create the Workflow
 
 ```{r}
 #| label: define-workflow
@@ -245,7 +223,7 @@ ferry_fit_lr <-
   fit(data = train_data)
 ```
 
-#### Evaluate the Model
+### Evaluate the Model
 
 We'll use `tidymodels` to evaluate how our model did using the testing dataset. Remember that this model is **far from perfect** and we don't care too much about making a perfect model.
 
@@ -267,19 +245,12 @@ predictions_lr |>
 
 ```
 
-🛑 Stop here!
 
-## Task 2 - Pin Model to Posit Connect
+## Pin Model to Posit Connect
 
 Now that we have a model, we'll want to save it to a location so that it can be easily shared with colleagues, other content, or your future self! The `pins` package is the workhorse behind this workflow. The `vetiver` package has some wrappers around the pinning functions that we'll use in this task.
 
-🔄 Tasks
-
--   Create a vetiver model.
-
--   Pin vetiver model to Posit Connect.
-
-#### Create a Vetiver Model and Pin to Posit Connect
+### Create a Vetiver Model and Pin to Posit Connect
 
 Before we go any further, we need to convert our logistic regression model into a format that can be used by `vetiver`:
 
@@ -305,28 +276,12 @@ board |> vetiver_pin_write(v_model)
 
 ```
 
-Navigate to Posit Connect and check out your pinned model! You'll also notice a message asking you to create a **Model Card**. This is alsways a good idea, especially if you will be sharing your model with others. An example model card can be found here: `materials/04-tidymodels-vetiver/ferry_modelcard_r.Rmd`.
 
-🛑 Stop here!
-
-## Task 3 - Serve Model as an API
-
-APIs are a great way for users, applications, or other systems to interact with your model. `vetiver` leverages [Plumber](https://www.rplumber.io/) which is used to create APIs with only R code! Let's create an API here within Posit Workbench, and then deploy it to Posit Connect.
-
-🔄 Tasks
-
--   Deploy model to Posit Connect as an API.
-
--   Make a prediction using the API visual interface (RapiDoc).
-
--   Make a request to the API using R code.
-
-#### Deploy API to Posit Connect
-
-**Be sure to add your user name for the pin!**
+## Serve Model as an API
 
 ```{r}
 #| label: create-api
+#| message: false
 
 # Create API from pinned model using vetiver
 vetiver_deploy_rsconnect(board = board, name = "katie.masiello@posit.co/ferry_model")
@@ -349,12 +304,12 @@ Once it's deployed, navigate to the API on Posit Connect and give it a test run!
 ]
 ```
 
-#### Make a Prediction using R Code
+### Make a Prediction using R Code
 
 On Posit Connect, navigate to your newly created API, and copy the URL for the content below. You can find this URL by clicking the access tab --\> URL.
 
 ```{r}
-api_url <- "https://pub.current.posit.team/ferry_model"
+api_url <- "https://pub.current.posit.team/public/ferry_model"
 
 # Append "/predict" to the end of your api to create the endpoint
 endpoint <- vetiver_endpoint(paste0(api_url, "/predict"))
@@ -391,38 +346,27 @@ predict(endpoint,
         httr::add_headers(Authorization = paste("Key", Sys.getenv("CONNECT_API_KEY"))))$.pred_class
 ```
 
-🛑 Stop here!
 
-## Task 4 - Version and Monitor Model
+## Version and Monitor Model
 
 Creating a model is an iterative process, and chances are you'll create multiple versions of your model along the way. You may even create a completely different model to address the same question. How then can you keep track of all these versions, and ensure that you're always using the best model for the job? Vetiver to the rescue 🦸!
 
-Before we get started, we first need to make sure that the board we are using to pin our models can accommodate versioning. Fortunately, most boards, including Posit Connect, leverage versioning by default. If you want to explicitly turn on versions, just make sure you use the `versioned` argument when defining your board: `board_connect(versioned = TRUE)`.
-
 Monitoring a model means you are assessing performance as new data comes in over time. During task 1, we pulled out the bottom 500 rows from our dataset, and saved it to the `monitoring_data` variable. This will simulate the "new" data for model monitoring!
 
-🔄 Tasks
+### List Model Versions
 
--   List model versions.
-
--   Monitor model performance using *new* ferry data.
-
-#### List Model Versions
-
-We only have 1 version of our model, but let's list it anyway by using the `pin_versions()` function. Take note of the **version number (first column)!**
 
 ```{r}
 #| label: list-pin-versions
 
 # View versions of your model 
-#  Replace "____" with your username 
 pin_versions(board = board, name = "katie.masiello@posit.co/ferry_model")
 
 # We can also extract some metadata from the pin
 pin_meta(board = board, name = "katie.masiello@posit.co/ferry_model")$description
 ```
 
-#### Create an Xgboost Model
+### Create an Xgboost Model
 
 Let's create an xgboost model to answer the same question as our logistic regression model: can we predict if a ferry will be delayed or not. The below code cell will create, train, and assess the performance of our xgboost model. This step will also take a few seconds to run.
 
@@ -461,7 +405,7 @@ predictions_xgb |>
 
 ```
 
-#### Pin Xgboost Model to Posit Connect
+### Pin Xgboost Model to Posit Connect
 
 Now that we have created an xgboost model, let's convert it to a `vetiver` model and pin it to the same location as our original **ferry_model** pin. Then we'll check the pin versions again.
 
@@ -476,16 +420,15 @@ board |>
   vetiver_pin_write(v_model_xgb)
 
 # View versions of your model 
-#  Replace "_____" with your username 
 pin_versions(board = board, name = "katie.masiello@posit.co/ferry_model")
 
 pin_meta(board = board, name = "katie.masiello@posit.co/ferry_model")$description
 
 ```
 
-#### Monitor Model Performance
+### Monitor Model Performance
 
-How do we know which model is performing better? Logistic regression or xgboost? That's where model monitoring comes into play. Let's use some common classification model metrics (accuracy and kap) to asses each model using the "new" `monitoring_data`.
+How do we know which model is performing better? Logistic regression or xgboost? That's where model monitoring comes into play. Let's use some common classification model metrics (accuracy and kap) to assess each model using the "new" `monitoring_data`.
 
 ❗Be sure add in the version number as a string (eg. "557741").
 
