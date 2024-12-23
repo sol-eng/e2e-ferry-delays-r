@@ -1,6 +1,8 @@
-This is an easier-to-demo, thinned down version of the project work from the posit::conf(2024) workshop [Data Science Workflows with Posit Tools - R Focus](https://github.com/posit-conf-2024/ds-workflows-r).
+This is an easier-to-demo, thinned down version of the project work from the 
+posit::conf(2024) workshop [Data Science Workflows with Posit Tools - R Focus](https://github.com/posit-conf-2024/ds-workflows-r).
 
-This project demonstrates end-to-end data science workflows with an example project of predicting ferry delays.
+This project demonstrates end-to-end data science workflows with an example 
+project of predicting ferry delays.
 
 The project includes:
 
@@ -11,3 +13,5 @@ The project includes:
 -   05 - Delivering insights using an interactive Shiny app
 -   06 - Employing the `connectapi` Posit SDK to monitor content usage
 
+Browse full workshop materials at <https://github.com/posit-conf-2024/ds-workflows-r> 
+and see slides at <https://posit-conf-2024.github.io/ds-workflows-r/>.

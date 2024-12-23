@@ -18,6 +18,11 @@ library(plotly)
 ```
 
 ```{r}
+#| echo: false
+gitlink::ribbon_css("https://github.com/sol-eng/e2e-ferry-delays-r.git", text="View on GitHub")
+```
+
+```{r}
 #| label: user-defined inputs
 
 # 1. specify the guid for the content

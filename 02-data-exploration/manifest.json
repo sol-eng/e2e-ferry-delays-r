@@ -1602,6 +1602,41 @@
         "Built": "R 4.4.0; ; 2024-04-25 19:49:38 UTC; unix"
       }
     },
+    "gitlink": {
+      "Source": "CRAN",
+      "Repository": "https://pkg.current.posit.team/cran/latest",
+      "description": {
+        "Package": "gitlink",
+        "Title": "Add 'Git' Links to Your Web Based Assets",
+        "Version": "0.1.3",
+        "Authors@R": "\n    c(person(given = \"Cole\",\n             family = \"Arendt\",\n             role = c(\"aut\", \"cre\"),\n             email = \"cole@rstudio.com\"),\n      person(given = \"RStudio\",\n             role = c(\"cph\", \"fnd\")))",
+        "Description": "Provides helpers to add 'Git' links to 'shiny'\n    applications, 'rmarkdown' documents, and other 'HTML' based resources.\n    This is most commonly used for 'GitHub' ribbons.",
+        "License": "MIT + file LICENSE",
+        "URL": "https://github.com/colearendt/gitlink",
+        "BugReports": "https://github.com/colearendt/gitlink/issues",
+        "Depends": "R (>= 3.1)",
+        "Imports": "htmltools (>= 0.3.6), rlang (>= 0.3.1)",
+        "Suggests": "covr (>= 3.0.1), spelling (>= 2.0), testthat (>= 2.0.0.9000),\nrmarkdown, fs, rprojroot, shiny",
+        "Encoding": "UTF-8",
+        "Language": "en-US",
+        "LazyData": "true",
+        "RoxygenNote": "6.1.1",
+        "NeedsCompilation": "no",
+        "Packaged": "2019-07-19 12:44:55 UTC; carendt",
+        "Author": "Cole Arendt [aut, cre],\n  RStudio [cph, fnd]",
+        "Maintainer": "Cole Arendt <cole@rstudio.com>",
+        "Repository": "RSPM",
+        "Date/Publication": "2019-07-23 12:20:02 UTC",
+        "Built": "R 4.4.1; ; 2024-10-24 05:13:39 UTC; unix",
+        "RemoteType": "standard",
+        "RemotePkgRef": "gitlink",
+        "RemoteRef": "gitlink",
+        "RemoteRepos": "https://pkg.current.posit.team/cran/latest",
+        "RemoteReposName": "CRAN",
+        "RemotePkgPlatform": "source",
+        "RemoteSha": "0.1.3"
+      }
+    },
     "glue": {
       "Source": "CRAN",
       "Repository": "https://pkg.current.posit.team/cran/latest",
@@ -4313,7 +4348,7 @@
   },
   "files": {
     "02-data-exploration.qmd": {
-      "checksum": "7f3a5b6bd3a7d67438ff7473fd2d3837"
+      "checksum": "329b2700787d3943f338a643cc870137"
     }
   },
   "users": null

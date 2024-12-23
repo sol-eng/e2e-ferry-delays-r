@@ -135,7 +135,10 @@ ui <- page_sidebar(
                     ),
   
   navset_underline(
-    nav_panel(title = "Overview",
+    nav_panel(
+      gitlink::ribbon_css("https://github.com/sol-eng/e2e-ferry-delays-r.git", text="View on GitHub"),
+      
+      title = "Overview",
               br(),
               withSpinner(
                 uiOutput("delay_status_box"),

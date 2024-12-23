@@ -16,6 +16,12 @@ editor_options:
 html-table-processing: none
 ---
 
+```{r}
+#| echo: false
+gitlink::ribbon_css("https://github.com/sol-eng/e2e-ferry-delays-r.git", text="View on GitHub")
+```
+
+
 ## Goals
 
 The goals of this notebook are to:
