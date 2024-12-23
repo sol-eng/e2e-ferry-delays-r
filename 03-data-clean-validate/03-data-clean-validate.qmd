@@ -18,7 +18,7 @@ html-table-processing: none
 
 ## Goals
 
-The goals of this activity are to:
+The goals of this notebook are to:
 
 -   use a environment variable to toggle state for development and testing
 -   perform data cleaning and validation to prepare data for our model
@@ -52,12 +52,12 @@ Data not written to database but an email for condition {Sys.getenv('CONDITION_O
 
 Value of `CONDITION_OVERRIDE` is `r Sys.getenv("CONDITION_OVERRIDE")`
 
-## Task 1 - Read in raw data
-
 ## Setup
 
 ```{r}
 #| label: setup
+#| message: false
+#| warning: false
 
 library(DBI)
 library(RPostgres)
@@ -70,17 +70,14 @@ library(ferryfairy)
 
 ```
 
-🔄 Task
+## Read in raw data
 
 Retrieve the raw data from the database for cleaning and validating.
-
-### Connect to the database
 
 ```{r}
 #| label: make database connection
 #| eval: false
 
-# Run this code as-is
 con <- dbConnect(RPostgres::Postgres(), 
                  host = Sys.getenv("DATABASE_HOST"), 
                  port = "5432", 
@@ -88,10 +85,6 @@ con <- dbConnect(RPostgres::Postgres(),
                  user = Sys.getenv("DATABASE_USER_R"), 
                  password = Sys.getenv("DATABASE_PASSWORD_R"))
 ```
-
-### Read in data
-
-Because we are in a Workshop setting, we will pull the data into local memory using `collect()` just to remove one layer of abstraction. This is not necessary, and in general, most of the data validation and cleaning steps that follow can still be done against the data in the database.
 
 ```{r}
 #| label: read in raw data
@@ -117,9 +110,7 @@ vesselhistory_raw <- board |> pin_read("katie.masiello@posit.co/vesselhistory_ra
 weather_terminal_history_raw <- board |> pin_read("katie.masiello@posit.co/weather_terminal_history_raw")
 ```
 
-## Task 2 - Validate raw production data schema
-
-🔄 Task
+## Validate raw production data schema
 
 All of our downstream tasks depend on our raw data coming in with the expected columns and schema. We could impose errors downstream if we process errant data.
 
@@ -166,7 +157,6 @@ If either raw data schema fail validation, it will generate a stop notice and pr
 #| label: data schema validations
 
 # These are our data set integrity validations. All of these trigger a stop notice under fail conditions.
-# Troubleshooting: if either of these fail, look at the x_list$col_types and $col_names to see the discrepancy
 
 # validate integrity of vessel history data frame
 vesselhistory_df_integrity_agent <- 
@@ -228,9 +218,7 @@ stop_alert <- any((if(exists("condition")){condition == "STOP"}), Sys.getenv("CO
 
 ```
 
-## Task 3 - Clean and transform data
-
-🔄 Task
+## Clean and transform data
 
 As long as the raw data integrity validations passed, clean and transform the data to prepare it for additional validation and modeling. Cleaning will include:
 
@@ -242,7 +230,7 @@ As long as the raw data integrity validations passed, clean and transform the da
 
 ### Clean data
 
-Data cleaning steps are extraneous to the learning objectives of the Workshop. To simply this document, cleaning steps have been wrapped in a function in the `ferryfairy` package. .
+To simply this document, cleaning steps have been wrapped in a function in the `ferryfairy` package. 
 
 ```{r}
 #| label: Clean data sets
@@ -279,9 +267,7 @@ if (stop_alert != TRUE) {
 }
 ```
 
-## Task 4 - Validate the model data
-
-🔄 Task
+## Validate the model data
 
 Use `pointblank` to create a validation agent and interrogate.
 
@@ -358,9 +344,7 @@ if (stop_alert != TRUE) {
 }
 ```
 
-## Task 5 - Remove failed records from data set
-
-🔄 Task
+## Remove failed records from data set
 
 Pointblank has identified all of the rows of `vesselhistory_w_weather` that passed and failed validation. Now remove those that failed so the data that is passed downstream to our modeling step is squeaky clean.
 
@@ -373,9 +357,7 @@ if (stop_alert != TRUE) {
 }
 ```
 
-## Task 6 - Write cleaned and validated data to database
-
-🔄 Task
+## Write cleaned and validated data to database
 
 Write cleaned data to database
 
@@ -385,9 +367,7 @@ Write cleaned data to database
 
 if (stop_alert != TRUE & !Sys.getenv("CONDITION_OVERRIDE") %in% conditions) {
 
-  my_username <- "___" #Fill in your username, workshop participants!
-
-  my_df_name <- paste0("modeldata_validated", my_username)
+  my_df_name <-"modeldata_validated"
 
   DBI::dbWriteTable(conn = con, # the connection
                     name = my_df_name, # the name of the table you will create in the DB
@@ -397,18 +377,13 @@ if (stop_alert != TRUE & !Sys.getenv("CONDITION_OVERRIDE") %in% conditions) {
 ```
 
 ```{r}
+
+if (stop_alert != TRUE & !Sys.getenv("CONDITION_OVERRIDE") %in% conditions) {
 board |> pin_write(modeldata_validated)
+}
 ```
 
-## Task 7 - Send Conditional Email
-
-🔄 Task
-
--   Publish this report to Posit Connect
--   To preview the email for development or testing purposes, change the value of `CONDITION_OVERRIDE` in either the `.Renviron` file to "STOP", "WARN", or "OK" in a local Workbench session, or by setting the environment variable in the `Vars` pane on Posit Connect
--   💡 If testing locally, look in the folder `email-preview` to see the HTML email preview
-
-Below is how we generate the emails.
+## Send Conditional Email
 
 We have three scenarios:
 
@@ -596,11 +571,17 @@ if (condition == "WARN") {
   desc <- x_list$briefs[which(x_list$warn)]
   fails <- x_list$f_failed[which(x_list$warn)]
   threshold <- purrr::map(step, ~{x_list$validation_set$actions[[.x]]$warn_fraction}) |> unlist()
+  
+  # threshold will be NULL if condition override is set to trigger this email.
+  if(is.null(threshold)) threshold <- rep(0, length(step))
 
   warnings_table <- data.frame(step, desc,threshold,fails) |> gt() |> cols_label(step="Validation Step",desc="Description",fails="Fraction Failed", threshold="Threshold") |> fmt_number(columns = c(fails, threshold),decimal = 2)
 
+
   warnings_table |> as_raw_html() 
 }
+
+
 ```
 
 Review the associated extract files to see the records that failed validation.
