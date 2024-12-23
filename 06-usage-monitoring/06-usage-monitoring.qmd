@@ -3,6 +3,8 @@ title: Historical Content Usage
 format:
   dashboard:
      theme: default
+     template-partials:
+      - metadata.html 
      orientation: rows
 editor_options: 
   chunk_output_type: console
@@ -17,10 +19,6 @@ library(gt)
 library(plotly)
 ```
 
-```{r}
-#| echo: false
-gitlink::ribbon_css("https://github.com/sol-eng/e2e-ferry-delays-r.git", text="View on GitHub")
-```
 
 ```{r}
 #| label: user-defined inputs
