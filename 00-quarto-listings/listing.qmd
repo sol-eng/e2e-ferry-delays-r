@@ -6,7 +6,7 @@ format:
     title-block-banner: true
     template-partials: 
       - title-block.html
-listing: 
+listing:
   id: gallery
   contents: content.yml
   template: showcase.ejs
@@ -14,9 +14,20 @@ resources:
   - wenatchee.png
 ---
 
+
+```{r}
+#| echo: false
+gitlink::ribbon_css("https://github.com/sol-eng/e2e-ferry-delays-r.git", text="View on GitHub")
+```
+
+
+![](https://raw.githubusercontent.com/posit-conf-2024/ds-workflows-r/refs/heads/main/website/slides/slide_resources/ds-workflows-r-2024.jpg){width=70% fig-align="center"}
+
 The project artifacts below represent the full development of a project, from initial data exploration, data cleaning and validation, model development and deployment, app development, and monitoring usage of our app. 
+
+
 
 ::: {#gallery}
 
-::: 
+:::
 

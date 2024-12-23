@@ -1,5 +1,8 @@
 project:
   type: website
+  render: 
+    - listing.qmd
+  
 
 website:
   page-footer: 

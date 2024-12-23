@@ -1,53 +1,60 @@
-- category: Medicine
-  tiles:
-    - org: Quarto Document
-      title: Raw Data Download and Write
-      url: https://pub.current.posit.team/ferries-r-raw-data-download/
-      devurl: https://pub.current.posit.team/connect/#/apps/4f060e6b-53a5-4de9-ad9b-9497a7e68489/access/23
-      description: This notebook downloads the raw data from WSDOT and Open Meteo and saves it for downstream processing. If there is an issue with the raw data, an email alert will be sent.
-      thumbnail: 01-raw-data-download.jpg
-      tags: 
-        - conditional email
-      order: 1.0
-    - org: Quarto Document
-      title: Data Exploration
-      url: https://pub.current.posit.team/ferries-r-data-exploration/
-      devurl: https://pub.current.posit.team/connect/#/apps/a635d88d-b65f-409e-8094-3188427185ea/
-      description: Ad hoc exploration of the raw data used for the project.
-      thumbnail: 02-data-exploration.png
-      tags: 
-        - pointblank
-    - org: Quarto Document
-      title: Data Clean and Validate
-      url: https://pub.current.posit.team/ferries-r-data-validation/
-      devurl: https://pub.current.posit.team/connect/#/apps/3c3255b6-60ea-4258-9202-52bdbb1b6421/
-      description: This notebook cleans and validate the ferry data using `{pointblank}`. Conditional emails are used based on the outcome of validation. Use the envVar CONDITION_OVERRIDE for testing.
-      thumbnail: 03-data-validation.png
-      tags: 
-        - conditional email
-        - pointblank
-    - org: Plumber API (Vetiver)
-      title: Ferry Delay Model API
-      url: https://pub.current.posit.team/ferry_model/
-      devurl: https://pub.current.posit.team/connect/#/apps/21b8282b-8e28-48bf-886b-d9a754b90a8b/
-      description: API that predicts if a Seattle Ferry will have a delayed departure.
-      thumbnail: 04-model-api.png
-      tags: 
-        - vetiver 
-        - plumber
-    - org: Shiny App
-      title: Ferry Delay Prediction App
-      url: https://pub.current.posit.team/ferries-r-app/
-      devurl: https://pub.current.posit.team/connect/#/apps/d31ca35b-ccbb-4fb0-9f4a-807c6e5c4815/
-      description: Shiny (R) application used as an interface for the Seattle Ferry Delay model that predicts if a ferry will have a delayed departure.
-      thumbnail: 05-app.png
-      tags: 
-        - shiny
-    - org: Quarto Dashboard
-      title: App Usage Monitoring Dashboard
-      url: https://pub.current.posit.team/ferries-r-app-usage-dashboard/
-      devurl: https://pub.current.posit.team/connect/#/apps/19a3d8f1-e004-4269-82cb-366204c2f31c/
-      description: Quarto Dashboard monitoring usage of the Ferry Delay App. Scheduled to run and update periodically.
-      thumbnail: 06-usage-dashboard.png
-      tags: 
-        - connectapi
+- title: Raw Data Download and Write
+  type: Quarto Document
+  url: https://pub.current.posit.team/public/ferries-r-raw-data-download/
+  devurl: https://pub.current.posit.team/connect/#/apps/635c65f9-b6e0-4642-8642-6311c0d31ccf
+  description: This notebook downloads the raw data from WSDOT and Open Meteo and saves it for downstream processing. If there is an issue with the raw data, an email alert will be sent.
+  thumbnail: 01-raw-data-download.jpg
+  tags: 
+    - scheduling
+    - conditional email
+  order: 1.0
+
+- title: Data Exploration
+  type: Quarto Document
+  url: https://pub.current.posit.team/public/ferries-r-data-exploration/
+  devurl: https://pub.current.posit.team/connect/#/apps/e310058d-6fdf-4342-93e5-e852dbb34ded
+  description: Ad hoc exploration of the raw data used for the project.
+  thumbnail: 02-data-exploration.png
+  tags: 
+    - pointblank
+    - skimr
+
+- title: Data Clean and Validate
+  type: Quarto Document
+  url: https://pub.current.posit.team/public/ferries-r-data-validation/
+  devurl: https://pub.current.posit.team/connect/#/apps/4057350e-4101-425c-a212-932533c07dbd
+  description: This notebook cleans and validate the ferry data using `{pointblank}`. Conditional emails are used based on the outcome of validation. Use the envVar CONDITION_OVERRIDE for testing.
+  thumbnail: 03-data-validation.png
+  tags: 
+    - scheduling 
+    - conditional email
+    - pointblank
+
+- title: Ferry Delay Model API
+  type: Plumber API (Vetiver)
+  url: https://pub.current.posit.team/public/ferry_model/
+  devurl: https://pub.current.posit.team/connect/#/apps/21b8282b-8e28-48bf-886b-d9a754b90a8b/
+  description: API that predicts if a Seattle Ferry will have a delayed departure.
+  thumbnail: 04-model-api.png
+  tags: 
+    - vetiver 
+    - plumber
+
+- title: Ferry Delay Prediction App
+  type: Shiny App
+  url: https://pub.current.posit.team/public/ferries-r-app/
+  devurl: https://pub.current.posit.team/connect/#/apps/900b55d6-e2d3-42e4-b20a-4b01975b8f74
+  description: Shiny (R) application used as an interface for the Seattle Ferry Delay model that predicts if a ferry will have a delayed departure.
+  thumbnail: 05-app.png
+  tags: 
+    - shiny
+    - logging
+
+- title: App Usage Monitoring Dashboard
+  type: Quarto Dashboard
+  url: https://pub.current.posit.team/public/ferries-r-app-usage-dashboard/
+  devurl: https://pub.current.posit.team/connect/#/apps/e60191b3-4e30-4321-b33b-254c50313a9a
+  description: Quarto Dashboard monitoring usage of the Ferry Delay App. Scheduled to run and update periodically.
+  thumbnail: 06-usage-dashboard.png
+  tags: 
+    - connectapi
