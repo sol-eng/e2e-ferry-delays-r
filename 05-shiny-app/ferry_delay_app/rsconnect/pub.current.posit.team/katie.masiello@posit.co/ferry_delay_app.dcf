@@ -1,12 +1,10 @@
 name: ferry_delay_app
-title:
+title: WS Ferries R 05 Shiny Delay App
 username: katie.masiello@posit.co
 account: katie.masiello@posit.co
 server: pub.current.posit.team
 hostUrl: https://pub.current.posit.team/__api__
 appId: 77
-bundleId: 145
-url: https://pub.current.posit.team/content/d31ca35b-ccbb-4fb0-9f4a-807c6e5c4815/
+bundleId: 673
+url: https://pub.current.posit.team/public/ferries-r-app/
 version: 1
-asMultiple: FALSE
-asStatic: FALSE

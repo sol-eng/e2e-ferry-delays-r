@@ -1,6 +1,6 @@
 {
   "R": {
-    "Version": "4.4.0",
+    "Version": "4.4.1",
     "Repositories": [
       {
         "Name": "CRAN",
@@ -13,7 +13,7 @@
       "Package": "DBI",
       "Version": "1.2.3",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "CRAN",
       "Requirements": [
         "R",
         "methods"
@@ -24,7 +24,7 @@
       "Package": "MASS",
       "Version": "7.3-61",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "RSPM",
       "Requirements": [
         "R",
         "grDevices",
@@ -56,7 +56,7 @@
       "Package": "PKI",
       "Version": "0.1-14",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "RSPM",
       "Requirements": [
         "R",
         "base64enc"
@@ -67,7 +67,7 @@
       "Package": "R6",
       "Version": "2.5.1",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "CRAN",
       "Requirements": [
         "R"
       ],
@@ -77,7 +77,7 @@
       "Package": "RColorBrewer",
       "Version": "1.1-3",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "RSPM",
       "Requirements": [
         "R"
       ],
@@ -87,7 +87,7 @@
       "Package": "Rcpp",
       "Version": "1.0.13",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "CRAN",
       "Requirements": [
         "methods",
         "utils"
@@ -98,7 +98,7 @@
       "Package": "askpass",
       "Version": "1.2.0",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "RSPM",
       "Requirements": [
         "sys"
       ],
@@ -108,7 +108,7 @@
       "Package": "backports",
       "Version": "1.5.0",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "RSPM",
       "Requirements": [
         "R"
       ],
@@ -118,7 +118,7 @@
       "Package": "base64enc",
       "Version": "0.1-3",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "CRAN",
       "Requirements": [
         "R"
       ],
@@ -128,7 +128,7 @@
       "Package": "bit",
       "Version": "4.0.5",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "CRAN",
       "Requirements": [
         "R"
       ],
@@ -138,7 +138,7 @@
       "Package": "bit64",
       "Version": "4.0.5",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "CRAN",
       "Requirements": [
         "R",
         "bit",
@@ -152,7 +152,7 @@
       "Package": "blob",
       "Version": "1.2.4",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "RSPM",
       "Requirements": [
         "methods",
         "rlang",
@@ -164,7 +164,7 @@
       "Package": "broom",
       "Version": "1.0.6",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "RSPM",
       "Requirements": [
         "R",
         "backports",
@@ -184,7 +184,7 @@
       "Package": "bslib",
       "Version": "0.8.0",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "CRAN",
       "Requirements": [
         "R",
         "base64enc",
@@ -239,7 +239,7 @@
       "Package": "cachem",
       "Version": "1.1.0",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "CRAN",
       "Requirements": [
         "fastmap",
         "rlang"
@@ -250,7 +250,7 @@
       "Package": "callr",
       "Version": "3.7.6",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "CRAN",
       "Requirements": [
         "R",
         "R6",
@@ -263,7 +263,7 @@
       "Package": "cellranger",
       "Version": "1.1.0",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "RSPM",
       "Requirements": [
         "R",
         "rematch",
@@ -289,7 +289,7 @@
       "Package": "cli",
       "Version": "3.6.3",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "CRAN",
       "Requirements": [
         "R",
         "utils"
@@ -300,7 +300,7 @@
       "Package": "clipr",
       "Version": "0.8.0",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "CRAN",
       "Requirements": [
         "utils"
       ],
@@ -310,7 +310,7 @@
       "Package": "colorspace",
       "Version": "2.1-1",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "RSPM",
       "Requirements": [
         "R",
         "grDevices",
@@ -324,14 +324,14 @@
       "Package": "commonmark",
       "Version": "1.9.1",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "RSPM",
       "Hash": "5d8225445acb167abf7797de48b2ee3c"
     },
     "conflicted": {
       "Package": "conflicted",
       "Version": "1.2.0",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "RSPM",
       "Requirements": [
         "R",
         "cli",
@@ -344,7 +344,7 @@
       "Package": "cpp11",
       "Version": "0.4.7",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "RSPM",
       "Requirements": [
         "R"
       ],
@@ -354,7 +354,7 @@
       "Package": "crayon",
       "Version": "1.5.3",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "CRAN",
       "Requirements": [
         "grDevices",
         "methods",
@@ -366,7 +366,7 @@
       "Package": "crosstalk",
       "Version": "1.2.1",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "RSPM",
       "Requirements": [
         "R6",
         "htmltools",
@@ -379,7 +379,7 @@
       "Package": "curl",
       "Version": "5.2.1",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "CRAN",
       "Requirements": [
         "R"
       ],
@@ -389,7 +389,7 @@
       "Package": "data.table",
       "Version": "1.15.4",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "RSPM",
       "Requirements": [
         "R",
         "methods"
@@ -400,7 +400,7 @@
       "Package": "dbplyr",
       "Version": "2.5.0",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "RSPM",
       "Requirements": [
         "DBI",
         "R",
@@ -428,7 +428,7 @@
       "Package": "digest",
       "Version": "0.6.36",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "RSPM",
       "Requirements": [
         "R",
         "utils"
@@ -439,7 +439,7 @@
       "Package": "dplyr",
       "Version": "1.1.4",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "RSPM",
       "Requirements": [
         "R",
         "R6",
@@ -462,7 +462,7 @@
       "Package": "dtplyr",
       "Version": "1.3.1",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "RSPM",
       "Requirements": [
         "R",
         "cli",
@@ -481,7 +481,7 @@
       "Package": "ellipsis",
       "Version": "0.3.2",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "CRAN",
       "Requirements": [
         "R",
         "rlang"
@@ -490,20 +490,19 @@
     },
     "evaluate": {
       "Package": "evaluate",
-      "Version": "0.24.0",
+      "Version": "1.0.1",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "CRAN",
       "Requirements": [
-        "R",
-        "methods"
+        "R"
       ],
-      "Hash": "a1066cbc05caee9a4bf6d90f194ff4da"
+      "Hash": "3fd29944b231036ad67c3edb32e02201"
     },
     "fansi": {
       "Package": "fansi",
       "Version": "1.0.6",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "CRAN",
       "Requirements": [
         "R",
         "grDevices",
@@ -515,14 +514,14 @@
       "Package": "farver",
       "Version": "2.1.2",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "RSPM",
       "Hash": "680887028577f3fa2a81e410ed0d6e42"
     },
     "fastmap": {
       "Package": "fastmap",
       "Version": "1.2.0",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "CRAN",
       "Hash": "aa5e1cd11c2d15497494c5292d7ffcc8"
     },
     "ferryfairy": {
@@ -551,7 +550,7 @@
       "Package": "fontawesome",
       "Version": "0.5.2",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "CRAN",
       "Requirements": [
         "R",
         "htmltools",
@@ -563,7 +562,7 @@
       "Package": "forcats",
       "Version": "1.0.0",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "RSPM",
       "Requirements": [
         "R",
         "cli",
@@ -579,7 +578,7 @@
       "Package": "fs",
       "Version": "1.6.4",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "CRAN",
       "Requirements": [
         "R",
         "methods"
@@ -590,7 +589,7 @@
       "Package": "gargle",
       "Version": "1.5.2",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "RSPM",
       "Requirements": [
         "R",
         "cli",
@@ -612,7 +611,7 @@
       "Package": "generics",
       "Version": "0.1.3",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "RSPM",
       "Requirements": [
         "R",
         "methods"
@@ -623,7 +622,7 @@
       "Package": "ggplot2",
       "Version": "3.5.1",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "RSPM",
       "Requirements": [
         "MASS",
         "R",
@@ -648,7 +647,7 @@
       "Package": "glue",
       "Version": "1.7.0",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "RSPM",
       "Requirements": [
         "R",
         "methods"
@@ -659,7 +658,7 @@
       "Package": "googledrive",
       "Version": "2.1.1",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "RSPM",
       "Requirements": [
         "R",
         "cli",
@@ -684,7 +683,7 @@
       "Package": "googlesheets4",
       "Version": "1.1.1",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "RSPM",
       "Requirements": [
         "R",
         "cellranger",
@@ -712,7 +711,7 @@
       "Package": "gtable",
       "Version": "0.3.5",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "RSPM",
       "Requirements": [
         "R",
         "cli",
@@ -742,7 +741,7 @@
       "Package": "haven",
       "Version": "2.5.4",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "RSPM",
       "Requirements": [
         "R",
         "cli",
@@ -763,7 +762,7 @@
       "Package": "highr",
       "Version": "0.11",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "CRAN",
       "Requirements": [
         "R",
         "xfun"
@@ -774,7 +773,7 @@
       "Package": "hms",
       "Version": "1.1.3",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "RSPM",
       "Requirements": [
         "lifecycle",
         "methods",
@@ -788,7 +787,7 @@
       "Package": "htmltools",
       "Version": "0.5.8.1",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "CRAN",
       "Requirements": [
         "R",
         "base64enc",
@@ -804,7 +803,7 @@
       "Package": "htmlwidgets",
       "Version": "1.6.4",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "CRAN",
       "Requirements": [
         "grDevices",
         "htmltools",
@@ -819,7 +818,7 @@
       "Package": "httpuv",
       "Version": "1.6.15",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "CRAN",
       "Requirements": [
         "R",
         "R6",
@@ -834,7 +833,7 @@
       "Package": "httr",
       "Version": "1.4.7",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "CRAN",
       "Requirements": [
         "R",
         "R6",
@@ -870,7 +869,7 @@
       "Package": "ids",
       "Version": "1.0.1",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "RSPM",
       "Requirements": [
         "openssl",
         "uuid"
@@ -881,7 +880,7 @@
       "Package": "isoband",
       "Version": "0.2.7",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "RSPM",
       "Requirements": [
         "grid",
         "utils"
@@ -914,7 +913,7 @@
       "Package": "jquerylib",
       "Version": "0.1.4",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "CRAN",
       "Requirements": [
         "htmltools"
       ],
@@ -924,7 +923,7 @@
       "Package": "jsonlite",
       "Version": "1.8.8",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "RSPM",
       "Requirements": [
         "methods"
       ],
@@ -934,7 +933,7 @@
       "Package": "knitr",
       "Version": "1.48",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "CRAN",
       "Requirements": [
         "R",
         "evaluate",
@@ -950,7 +949,7 @@
       "Package": "labeling",
       "Version": "0.4.3",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "RSPM",
       "Requirements": [
         "graphics",
         "stats"
@@ -961,7 +960,7 @@
       "Package": "later",
       "Version": "1.3.2",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "CRAN",
       "Requirements": [
         "Rcpp",
         "rlang"
@@ -987,7 +986,7 @@
       "Package": "lazyeval",
       "Version": "0.2.2",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "RSPM",
       "Requirements": [
         "R"
       ],
@@ -997,7 +996,7 @@
       "Package": "leaflet",
       "Version": "2.2.2",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "RSPM",
       "Requirements": [
         "R",
         "RColorBrewer",
@@ -1036,7 +1035,7 @@
       "Package": "leaflet.providers",
       "Version": "2.0.0",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "RSPM",
       "Requirements": [
         "R",
         "htmltools"
@@ -1047,7 +1046,7 @@
       "Package": "lifecycle",
       "Version": "1.0.4",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "CRAN",
       "Requirements": [
         "R",
         "cli",
@@ -1075,7 +1074,7 @@
       "Package": "lubridate",
       "Version": "1.9.3",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "RSPM",
       "Requirements": [
         "R",
         "generics",
@@ -1088,7 +1087,7 @@
       "Package": "magrittr",
       "Version": "2.0.3",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "CRAN",
       "Requirements": [
         "R"
       ],
@@ -1098,7 +1097,7 @@
       "Package": "memoise",
       "Version": "2.0.1",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "CRAN",
       "Requirements": [
         "cachem",
         "rlang"
@@ -1126,7 +1125,7 @@
       "Package": "mime",
       "Version": "0.12",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "CRAN",
       "Requirements": [
         "tools"
       ],
@@ -1136,7 +1135,7 @@
       "Package": "modelr",
       "Version": "0.1.11",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "RSPM",
       "Requirements": [
         "R",
         "broom",
@@ -1154,7 +1153,7 @@
       "Package": "munsell",
       "Version": "0.5.1",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "RSPM",
       "Requirements": [
         "colorspace",
         "methods"
@@ -1165,7 +1164,7 @@
       "Package": "nlme",
       "Version": "3.1-165",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "RSPM",
       "Requirements": [
         "R",
         "graphics",
@@ -1198,7 +1197,7 @@
       "Package": "openssl",
       "Version": "2.2.0",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "RSPM",
       "Requirements": [
         "askpass"
       ],
@@ -1208,7 +1207,7 @@
       "Package": "packrat",
       "Version": "0.9.2",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "RSPM",
       "Requirements": [
         "R",
         "tools",
@@ -1220,7 +1219,7 @@
       "Package": "pillar",
       "Version": "1.9.0",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "CRAN",
       "Requirements": [
         "cli",
         "fansi",
@@ -1237,7 +1236,7 @@
       "Package": "pins",
       "Version": "1.3.0",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "RSPM",
       "Requirements": [
         "R",
         "cli",
@@ -1264,7 +1263,7 @@
       "Package": "pkgconfig",
       "Version": "2.0.3",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "CRAN",
       "Requirements": [
         "utils"
       ],
@@ -1274,7 +1273,7 @@
       "Package": "png",
       "Version": "0.1-8",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "RSPM",
       "Requirements": [
         "R"
       ],
@@ -1284,7 +1283,7 @@
       "Package": "prettyunits",
       "Version": "1.2.0",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "CRAN",
       "Requirements": [
         "R"
       ],
@@ -1294,7 +1293,7 @@
       "Package": "processx",
       "Version": "3.8.4",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "CRAN",
       "Requirements": [
         "R",
         "R6",
@@ -1307,7 +1306,7 @@
       "Package": "progress",
       "Version": "1.2.3",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "RSPM",
       "Requirements": [
         "R",
         "R6",
@@ -1321,7 +1320,7 @@
       "Package": "promises",
       "Version": "1.3.0",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "CRAN",
       "Requirements": [
         "R6",
         "Rcpp",
@@ -1337,7 +1336,7 @@
       "Package": "ps",
       "Version": "1.7.7",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "RSPM",
       "Requirements": [
         "R",
         "utils"
@@ -1348,7 +1347,7 @@
       "Package": "purrr",
       "Version": "1.0.2",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "CRAN",
       "Requirements": [
         "R",
         "cli",
@@ -1363,7 +1362,7 @@
       "Package": "ragg",
       "Version": "1.3.2",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "RSPM",
       "Requirements": [
         "systemfonts",
         "textshaping"
@@ -1381,7 +1380,7 @@
       "Package": "rappdirs",
       "Version": "0.3.3",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "CRAN",
       "Requirements": [
         "R"
       ],
@@ -1391,7 +1390,7 @@
       "Package": "raster",
       "Version": "3.6-26",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "RSPM",
       "Requirements": [
         "R",
         "Rcpp",
@@ -1405,7 +1404,7 @@
       "Package": "readr",
       "Version": "2.1.5",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "RSPM",
       "Requirements": [
         "R",
         "R6",
@@ -1428,7 +1427,7 @@
       "Package": "readxl",
       "Version": "1.4.3",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "RSPM",
       "Requirements": [
         "R",
         "cellranger",
@@ -1443,14 +1442,14 @@
       "Package": "rematch",
       "Version": "2.0.0",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "RSPM",
       "Hash": "cbff1b666c6fa6d21202f07e2318d4f1"
     },
     "rematch2": {
       "Package": "rematch2",
       "Version": "2.1.2",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "CRAN",
       "Requirements": [
         "tibble"
       ],
@@ -1470,7 +1469,7 @@
       "Package": "reprex",
       "Version": "2.1.1",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "RSPM",
       "Requirements": [
         "R",
         "callr",
@@ -1492,7 +1491,7 @@
       "Package": "rlang",
       "Version": "1.1.4",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "CRAN",
       "Requirements": [
         "R",
         "utils"
@@ -1503,7 +1502,7 @@
       "Package": "rmarkdown",
       "Version": "2.27",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "RSPM",
       "Requirements": [
         "R",
         "bslib",
@@ -1526,7 +1525,7 @@
       "Package": "rsconnect",
       "Version": "1.3.1",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "RSPM",
       "Requirements": [
         "PKI",
         "R",
@@ -1549,14 +1548,14 @@
       "Package": "rstudioapi",
       "Version": "0.16.0",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "RSPM",
       "Hash": "96710351d642b70e8f02ddeb237c46a7"
     },
     "rvest": {
       "Package": "rvest",
       "Version": "1.0.4",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "RSPM",
       "Requirements": [
         "R",
         "cli",
@@ -1575,7 +1574,7 @@
       "Package": "sass",
       "Version": "0.4.9",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "CRAN",
       "Requirements": [
         "R6",
         "fs",
@@ -1589,7 +1588,7 @@
       "Package": "scales",
       "Version": "1.3.0",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "RSPM",
       "Requirements": [
         "R",
         "R6",
@@ -1609,7 +1608,7 @@
       "Package": "selectr",
       "Version": "0.4-2",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "RSPM",
       "Requirements": [
         "R",
         "R6",
@@ -1682,7 +1681,7 @@
       "Package": "sourcetools",
       "Version": "0.1.7-1",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "CRAN",
       "Requirements": [
         "R"
       ],
@@ -1692,7 +1691,7 @@
       "Package": "sp",
       "Version": "2.1-4",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "RSPM",
       "Requirements": [
         "R",
         "grDevices",
@@ -1709,7 +1708,7 @@
       "Package": "stringi",
       "Version": "1.8.4",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "CRAN",
       "Requirements": [
         "R",
         "stats",
@@ -1722,7 +1721,7 @@
       "Package": "stringr",
       "Version": "1.5.1",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "CRAN",
       "Requirements": [
         "R",
         "cli",
@@ -1739,14 +1738,14 @@
       "Package": "sys",
       "Version": "3.4.2",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "RSPM",
       "Hash": "3a1be13d68d47a8cd0bfd74739ca1555"
     },
     "systemfonts": {
       "Package": "systemfonts",
       "Version": "1.1.0",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "CRAN",
       "Requirements": [
         "R",
         "cpp11",
@@ -1758,7 +1757,7 @@
       "Package": "terra",
       "Version": "1.7-78",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "RSPM",
       "Requirements": [
         "R",
         "Rcpp",
@@ -1770,7 +1769,7 @@
       "Package": "textshaping",
       "Version": "0.4.0",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "CRAN",
       "Requirements": [
         "R",
         "cpp11",
@@ -1803,7 +1802,7 @@
       "Package": "tibble",
       "Version": "3.2.1",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "CRAN",
       "Requirements": [
         "R",
         "fansi",
@@ -1822,7 +1821,7 @@
       "Package": "tidyr",
       "Version": "1.3.1",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "RSPM",
       "Requirements": [
         "R",
         "cli",
@@ -1845,7 +1844,7 @@
       "Package": "tidyselect",
       "Version": "1.2.1",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "RSPM",
       "Requirements": [
         "R",
         "cli",
@@ -1861,7 +1860,7 @@
       "Package": "tidyverse",
       "Version": "2.0.0",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "RSPM",
       "Requirements": [
         "R",
         "broom",
@@ -1901,7 +1900,7 @@
       "Package": "timechange",
       "Version": "0.3.0",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "RSPM",
       "Requirements": [
         "R",
         "cpp11"
@@ -1912,7 +1911,7 @@
       "Package": "tinytex",
       "Version": "0.52",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "RSPM",
       "Requirements": [
         "xfun"
       ],
@@ -1922,7 +1921,7 @@
       "Package": "tzdb",
       "Version": "0.4.0",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "RSPM",
       "Requirements": [
         "R",
         "cpp11"
@@ -1933,7 +1932,7 @@
       "Package": "utf8",
       "Version": "1.2.4",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "CRAN",
       "Requirements": [
         "R"
       ],
@@ -1943,7 +1942,7 @@
       "Package": "uuid",
       "Version": "1.2-1",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "RSPM",
       "Requirements": [
         "R"
       ],
@@ -1953,7 +1952,7 @@
       "Package": "vctrs",
       "Version": "0.6.5",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "CRAN",
       "Requirements": [
         "R",
         "cli",
@@ -1996,7 +1995,7 @@
       "Package": "viridisLite",
       "Version": "0.4.2",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "RSPM",
       "Requirements": [
         "R"
       ],
@@ -2006,7 +2005,7 @@
       "Package": "vroom",
       "Version": "1.6.5",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "RSPM",
       "Requirements": [
         "R",
         "bit64",
@@ -2032,7 +2031,7 @@
       "Package": "whisker",
       "Version": "0.4.1",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "CRAN",
       "Hash": "c6abfa47a46d281a7d5159d0a8891e88"
     },
     "withr": {
@@ -2051,7 +2050,7 @@
       "Package": "xfun",
       "Version": "0.46",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "RSPM",
       "Requirements": [
         "grDevices",
         "stats",
@@ -2063,7 +2062,7 @@
       "Package": "xml2",
       "Version": "1.3.6",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "CRAN",
       "Requirements": [
         "R",
         "cli",
@@ -2076,7 +2075,7 @@
       "Package": "xtable",
       "Version": "1.8-4",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "CRAN",
       "Requirements": [
         "R",
         "stats",
@@ -2088,7 +2087,7 @@
       "Package": "yaml",
       "Version": "2.3.10",
       "Source": "Repository",
-      "Repository": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
+      "Repository": "CRAN",
       "Hash": "51dab85c6c98e50a18d7551e9d49f76c"
     }
   }
