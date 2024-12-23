@@ -35,6 +35,8 @@ library(pointblank)
 library(tidyverse)
 library(glue)
 library(gt)
+library(downlit)
+library(xml2)
 
 ```
 

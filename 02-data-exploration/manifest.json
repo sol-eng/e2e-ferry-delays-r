@@ -1125,6 +1125,41 @@
         "Built": "R 4.4.0; x86_64-pc-linux-gnu; 2024-06-24 04:15:14 UTC; unix"
       }
     },
+    "downlit": {
+      "Source": "CRAN",
+      "Repository": "https://pkg.current.posit.team/cran/latest",
+      "description": {
+        "Package": "downlit",
+        "Title": "Syntax Highlighting and Automatic Linking",
+        "Version": "0.4.4",
+        "Authors@R": "c(\n    person(\"Hadley\", \"Wickham\", , \"hadley@posit.co\", role = c(\"aut\", \"cre\")),\n    person(\"Posit Software, PBC\", role = c(\"cph\", \"fnd\"))\n  )",
+        "Description": "Syntax highlighting of R code, specifically designed for the\n    needs of 'RMarkdown' packages like 'pkgdown', 'hugodown', and\n    'bookdown'. It includes linking of function calls to their\n    documentation on the web, and automatic translation of ANSI escapes in\n    output to the equivalent HTML.",
+        "License": "MIT + file LICENSE",
+        "URL": "https://downlit.r-lib.org/, https://github.com/r-lib/downlit",
+        "BugReports": "https://github.com/r-lib/downlit/issues",
+        "Depends": "R (>= 4.0.0)",
+        "Imports": "brio, desc, digest, evaluate, fansi, memoise, rlang, vctrs,\nwithr, yaml",
+        "Suggests": "covr, htmltools, jsonlite, MASS, MassSpecWavelet, pkgload,\nrmarkdown, testthat (>= 3.0.0), xml2",
+        "Config/Needs/website": "tidyverse/tidytemplate",
+        "Config/testthat/edition": "3",
+        "Encoding": "UTF-8",
+        "RoxygenNote": "7.3.1",
+        "NeedsCompilation": "no",
+        "Packaged": "2024-06-07 19:03:38 UTC; hadleywickham",
+        "Author": "Hadley Wickham [aut, cre],\n  Posit Software, PBC [cph, fnd]",
+        "Maintainer": "Hadley Wickham <hadley@posit.co>",
+        "Repository": "RSPM",
+        "Date/Publication": "2024-06-10 09:10:02 UTC",
+        "Built": "R 4.4.1; ; 2024-10-24 01:08:10 UTC; unix",
+        "RemoteType": "standard",
+        "RemotePkgRef": "downlit",
+        "RemoteRef": "downlit",
+        "RemoteRepos": "https://pkg.current.posit.team/cran/latest",
+        "RemoteReposName": "CRAN",
+        "RemotePkgPlatform": "source",
+        "RemoteSha": "0.4.4"
+      }
+    },
     "dplyr": {
       "Source": "CRAN",
       "Repository": "https://pkg.current.posit.team/cran/latest",
@@ -4278,7 +4313,7 @@
   },
   "files": {
     "02-data-exploration.qmd": {
-      "checksum": "afbe6704a89427208b8f9588449592fb"
+      "checksum": "7f3a5b6bd3a7d67438ff7473fd2d3837"
     }
   },
   "users": null
