@@ -18,7 +18,7 @@ html-table-processing: none
 
 ## Goals
 
-The goals of this activity are to:
+The goals of this notebook are to:
 
 -   get familiar with the Washington State Ferries data and weather data
 -   use `skimr::skim` and `pointblank::scan_data` to explore data
@@ -38,13 +38,9 @@ library(gt)
 
 ```
 
-## Task 1 - Read in raw data
-
-🔄 Task
+## Read in raw data
 
 Retrieve the raw data from the database for exploration.
-
-### Connect to the database
 
 ```{r}
 #| label: make database connection
@@ -64,9 +60,7 @@ con <- dbConnect(
 
 ```
 
-### Read in data
-
-Now we will use `dplyr` to define a data table from a database
+Use `dplyr` to define a data table from a database
 
 ```{r}
 #| label: read in raw data
@@ -93,9 +87,7 @@ weather_terminal_history_raw <- board |> pin_read("katie.masiello@posit.co/weath
 
 ```
 
-## Task 2 - Explore the data
-
-🔄 Task
+## Explore the data
 
 Begin exploring the data. You will want to understand:
 
@@ -210,11 +202,9 @@ Let's explore the results. Can you identify:
 
 -   Where in the data frame are there missing values?
 
-## Bonus - Create a data dictionary
+## Create a data dictionary
 
-🔄 Task
-
--   Create a data dictionary describing `vesselhistory_raw`
+Create a data dictionary describing `vesselhistory_raw`
 
 Pointblank helps us to document and provide context about our data. We use an "Informant" to create a data dictionary, which will be a part of our project documentation.
 
