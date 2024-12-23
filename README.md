@@ -1,4 +1,4 @@
-Based on the project work from the posit::conf(2024) workshop [Data Science Workflows with Posit Tools - R Focus](https://github.com/posit-conf-2024/ds-workflows-r).
+This is an easier-to-demo, thinned down version of the project work from the posit::conf(2024) workshop [Data Science Workflows with Posit Tools - R Focus](https://github.com/posit-conf-2024/ds-workflows-r).
 
 This project demonstrates end-to-end data science workflows with an example project of predicting ferry delays.
 
