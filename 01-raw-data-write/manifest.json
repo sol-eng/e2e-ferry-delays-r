@@ -1,7 +1,7 @@
 {
   "version": 1,
   "locale": "en_US",
-  "platform": "4.4.0",
+  "platform": "4.4.1",
   "metadata": {
     "appmode": "quarto-static",
     "primary_rmd": "01-raw-data-write.qmd",
@@ -10,7 +10,7 @@
     "has_parameters": false
   },
   "quarto": {
-    "version": "1.4.555",
+    "version": "1.5.57",
     "engines": ["knitr"]
   },
   "packages": {
@@ -70,7 +70,9 @@
         "Packaged": "2024-01-12 08:51:36 UTC; ripley",
         "Author": "Brian Ripley [aut, cre, cph],\n  Bill Venables [ctb],\n  Douglas M. Bates [ctb],\n  Kurt Hornik [trl] (partial port ca 1998),\n  Albrecht Gebhardt [trl] (partial port ca 1998),\n  David Firth [ctb]",
         "Maintainer": "Brian Ripley <ripley@stats.ox.ac.uk>",
-        "Built": "R 4.4.0; x86_64-pc-linux-gnu; 2024-08-22 01:52:57 UTC; unix"
+        "Repository": "CRAN",
+        "Date/Publication": "2024-04-26 12:02:47 UTC",
+        "Built": "R 4.4.1; x86_64-pc-linux-gnu; 2024-08-22 01:54:01 UTC; unix"
       }
     },
     "Matrix": {
@@ -102,8 +104,8 @@
         "Author": "Douglas Bates [aut] (<https://orcid.org/0000-0001-8316-9503>),\n  Martin Maechler [aut, cre] (<https://orcid.org/0000-0002-8685-9910>),\n  Mikael Jagan [aut] (<https://orcid.org/0000-0002-3542-2938>),\n  Timothy A. Davis [ctb] (<https://orcid.org/0000-0001-7614-6899>,\n    SuiteSparse libraries, collaborators listed in\n    dir(system.file(\"doc\", \"SuiteSparse\", package=\"Matrix\"),\n    pattern=\"License\", full.names=TRUE, recursive=TRUE)),\n  George Karypis [ctb] (<https://orcid.org/0000-0003-2753-1437>, METIS\n    library, Copyright: Regents of the University of Minnesota),\n  Jason Riedy [ctb] (<https://orcid.org/0000-0002-4345-4200>, GNU\n    Octave's condest() and onenormest(), Copyright: Regents of the\n    University of California),\n  Jens Oehlschlägel [ctb] (initial nearPD()),\n  R Core Team [ctb] (base R's matrix implementation)",
         "Maintainer": "Martin Maechler <mmaechler+Matrix@gmail.com>",
         "Repository": "CRAN",
-        "Date/Publication": "2024-03-22 09:08:25 UTC",
-        "Built": "R 4.4.0; x86_64-pc-linux-gnu; 2024-08-22 01:53:13 UTC; unix"
+        "Date/Publication": "2024-04-26 12:03:02 UTC",
+        "Built": "R 4.4.1; x86_64-pc-linux-gnu; 2024-08-22 01:54:16 UTC; unix"
       }
     },
     "R6": {
@@ -128,12 +130,12 @@
         "Repository": "RSPM",
         "Date/Publication": "2021-08-19 14:00:05 UTC",
         "Encoding": "UTF-8",
-        "Built": "R 4.4.0; ; 2024-05-30 00:35:20 UTC; unix",
+        "Built": "R 4.4.1; ; 2024-10-24 01:01:21 UTC; unix",
         "RemoteType": "standard",
         "RemotePkgRef": "R6",
         "RemoteRef": "R6",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
+        "RemoteRepos": "https://pkg.current.posit.team/cran/latest",
+        "RemoteReposName": "CRAN",
         "RemotePkgPlatform": "source",
         "RemoteSha": "2.5.1"
       }
@@ -157,14 +159,7 @@
         "Repository": "RSPM",
         "Date/Publication": "2022-04-03 19:20:13 UTC",
         "Encoding": "UTF-8",
-        "Built": "R 4.4.0; ; 2024-04-25 19:45:12 UTC; unix",
-        "RemoteType": "standard",
-        "RemotePkgRef": "RColorBrewer",
-        "RemoteRef": "RColorBrewer",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
-        "RemotePkgPlatform": "source",
-        "RemoteSha": "1.1-3"
+        "Built": "R 4.4.0; ; 2024-04-25 19:45:12 UTC; unix"
       }
     },
     "Rcpp": {
@@ -190,12 +185,12 @@
         "Packaged": "2024-07-11 13:00:10 UTC; edd",
         "Repository": "RSPM",
         "Date/Publication": "2024-07-17 15:50:06 UTC",
-        "Built": "R 4.4.0; x86_64-pc-linux-gnu; 2024-07-18 06:27:47 UTC; unix",
+        "Built": "R 4.4.1; x86_64-pc-linux-gnu; 2024-10-24 01:02:28 UTC; unix",
         "RemoteType": "standard",
         "RemotePkgRef": "Rcpp",
         "RemoteRef": "Rcpp",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
+        "RemoteRepos": "https://pkg.current.posit.team/cran/latest",
+        "RemoteReposName": "CRAN",
         "RemotePkgPlatform": "source",
         "RemoteSha": "1.0.13"
       }
@@ -224,14 +219,7 @@
         "Maintainer": "Jeroen Ooms <jeroen@berkeley.edu>",
         "Repository": "RSPM",
         "Date/Publication": "2023-09-03 20:00:02 UTC",
-        "Built": "R 4.4.0; x86_64-pc-linux-gnu; 2024-04-25 19:41:22 UTC; unix",
-        "RemoteType": "standard",
-        "RemotePkgRef": "askpass",
-        "RemoteRef": "askpass",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
-        "RemotePkgPlatform": "source",
-        "RemoteSha": "1.2.0"
+        "Built": "R 4.4.0; x86_64-pc-linux-gnu; 2024-04-25 19:41:22 UTC; unix"
       }
     },
     "backports": {
@@ -257,14 +245,7 @@
         "Author": "Michel Lang [cre, aut] (<https://orcid.org/0000-0001-9754-0393>),\n  Duncan Murdoch [aut],\n  R Core Team [aut]",
         "Repository": "RSPM",
         "Date/Publication": "2024-05-23 12:30:02 UTC",
-        "Built": "R 4.4.0; x86_64-pc-linux-gnu; 2024-05-24 04:14:26 UTC; unix",
-        "RemoteType": "standard",
-        "RemotePkgRef": "backports",
-        "RemoteRef": "backports",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
-        "RemotePkgPlatform": "source",
-        "RemoteSha": "1.5.0"
+        "Built": "R 4.4.0; x86_64-pc-linux-gnu; 2024-05-24 04:14:26 UTC; unix"
       }
     },
     "base64enc": {
@@ -286,12 +267,12 @@
         "Repository": "RSPM",
         "Date/Publication": "2015-07-28 08:03:37",
         "Encoding": "UTF-8",
-        "Built": "R 4.4.0; x86_64-pc-linux-gnu; 2024-04-25 19:44:26 UTC; unix",
+        "Built": "R 4.4.1; x86_64-pc-linux-gnu; 2024-10-24 01:04:16 UTC; unix",
         "RemoteType": "standard",
         "RemotePkgRef": "base64enc",
         "RemoteRef": "base64enc",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
+        "RemoteRepos": "https://pkg.current.posit.team/cran/latest",
+        "RemoteReposName": "CRAN",
         "RemotePkgPlatform": "source",
         "RemoteSha": "0.1-3"
       }
@@ -319,16 +300,9 @@
         "RoxygenNote": "7.2.0",
         "NeedsCompilation": "yes",
         "Packaged": "2022-11-13 21:22:09 UTC; jo",
-        "Repository": "RSPM",
+        "Repository": "CRAN",
         "Date/Publication": "2022-11-15 21:20:16 UTC",
-        "Built": "R 4.4.0; x86_64-pc-linux-gnu; 2024-04-25 19:42:02 UTC; unix",
-        "RemoteType": "standard",
-        "RemotePkgRef": "bit",
-        "RemoteRef": "bit",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
-        "RemotePkgPlatform": "source",
-        "RemoteSha": "4.0.5"
+        "Built": "R 4.4.0; x86_64-pc-linux-gnu; 2024-12-12 14:39:02 UTC; unix"
       }
     },
     "bit64": {
@@ -349,21 +323,14 @@
         "ByteCompile": "yes",
         "URL": "https://github.com/truecluster/bit64",
         "Encoding": "UTF-8",
-        "Repository": "RSPM",
+        "Repository": "CRAN",
         "Repository/R-Forge/Project": "ff",
         "Repository/R-Forge/Revision": "177",
         "Repository/R-Forge/DateTimeStamp": "2018-08-17 17:45:18",
         "Date/Publication": "2020-08-30 07:20:02 UTC",
         "NeedsCompilation": "yes",
         "Packaged": "2020-08-29 10:56:45 UTC; jo",
-        "Built": "R 4.4.0; x86_64-pc-linux-gnu; 2024-04-25 19:42:16 UTC; unix",
-        "RemoteType": "standard",
-        "RemotePkgRef": "bit64",
-        "RemoteRef": "bit64",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
-        "RemotePkgPlatform": "source",
-        "RemoteSha": "4.0.5"
+        "Built": "R 4.4.0; x86_64-pc-linux-gnu; 2024-12-12 14:39:10 UTC; unix"
       }
     },
     "blob": {
@@ -391,14 +358,7 @@
         "Maintainer": "Kirill Müller <kirill@cynkra.com>",
         "Repository": "RSPM",
         "Date/Publication": "2023-03-17 12:00:06 UTC",
-        "Built": "R 4.4.0; ; 2024-04-25 19:46:32 UTC; unix",
-        "RemoteType": "standard",
-        "RemotePkgRef": "blob",
-        "RemoteRef": "blob",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
-        "RemotePkgPlatform": "source",
-        "RemoteSha": "1.2.4"
+        "Built": "R 4.4.0; ; 2024-04-25 19:46:32 UTC; unix"
       }
     },
     "broom": {
@@ -429,14 +389,7 @@
         "Maintainer": "Simon Couch <simon.couch@posit.co>",
         "Repository": "RSPM",
         "Date/Publication": "2024-05-17 09:10:02 UTC",
-        "Built": "R 4.4.0; ; 2024-05-18 04:08:43 UTC; unix",
-        "RemoteType": "standard",
-        "RemotePkgRef": "broom",
-        "RemoteRef": "broom",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
-        "RemotePkgPlatform": "source",
-        "RemoteSha": "1.0.6"
+        "Built": "R 4.4.0; ; 2024-05-18 04:08:43 UTC; unix"
       }
     },
     "bslib": {
@@ -469,12 +422,12 @@
         "Maintainer": "Carson Sievert <carson@posit.co>",
         "Repository": "RSPM",
         "Date/Publication": "2024-07-29 19:20:02 UTC",
-        "Built": "R 4.4.0; ; 2024-07-30 04:15:33 UTC; unix",
+        "Built": "R 4.4.1; ; 2024-10-24 01:06:12 UTC; unix",
         "RemoteType": "standard",
         "RemotePkgRef": "bslib",
         "RemoteRef": "bslib",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
+        "RemoteRepos": "https://pkg.current.posit.team/cran/latest",
+        "RemoteReposName": "CRAN",
         "RemotePkgPlatform": "source",
         "RemoteSha": "0.8.0"
       }
@@ -503,12 +456,12 @@
         "Maintainer": "Winston Chang <winston@posit.co>",
         "Repository": "RSPM",
         "Date/Publication": "2024-05-16 09:50:11 UTC",
-        "Built": "R 4.4.0; x86_64-pc-linux-gnu; 2024-05-17 04:16:50 UTC; unix",
+        "Built": "R 4.4.1; x86_64-pc-linux-gnu; 2024-10-24 01:02:22 UTC; unix",
         "RemoteType": "standard",
         "RemotePkgRef": "cachem",
         "RemoteRef": "cachem",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
+        "RemoteRepos": "https://pkg.current.posit.team/cran/latest",
+        "RemoteReposName": "CRAN",
         "RemotePkgPlatform": "source",
         "RemoteSha": "1.1.0"
       }
@@ -539,12 +492,12 @@
         "Maintainer": "Gábor Csárdi <csardi.gabor@gmail.com>",
         "Repository": "RSPM",
         "Date/Publication": "2024-03-25 13:30:06 UTC",
-        "Built": "R 4.4.0; ; 2024-04-25 19:47:46 UTC; unix",
+        "Built": "R 4.4.1; ; 2024-10-24 01:07:21 UTC; unix",
         "RemoteType": "standard",
         "RemotePkgRef": "callr",
         "RemoteRef": "callr",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
+        "RemoteRepos": "https://pkg.current.posit.team/cran/latest",
+        "RemoteReposName": "CRAN",
         "RemotePkgPlatform": "source",
         "RemoteSha": "3.7.6"
       }
@@ -574,14 +527,7 @@
         "Repository": "RSPM",
         "Date/Publication": "2016-07-27 03:17:48",
         "Encoding": "UTF-8",
-        "Built": "R 4.4.0; ; 2024-04-25 01:57:02 UTC; unix",
-        "RemoteType": "standard",
-        "RemotePkgRef": "cellranger",
-        "RemoteRef": "cellranger",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
-        "RemotePkgPlatform": "source",
-        "RemoteSha": "1.1.0"
+        "Built": "R 4.4.0; ; 2024-04-25 01:57:02 UTC; unix"
       }
     },
     "cli": {
@@ -609,12 +555,12 @@
         "Maintainer": "Gábor Csárdi <csardi.gabor@gmail.com>",
         "Repository": "RSPM",
         "Date/Publication": "2024-06-21 21:00:07 UTC",
-        "Built": "R 4.4.0; x86_64-pc-linux-gnu; 2024-06-22 04:20:06 UTC; unix",
+        "Built": "R 4.4.1; x86_64-pc-linux-gnu; 2024-10-24 01:01:06 UTC; unix",
         "RemoteType": "standard",
         "RemotePkgRef": "cli",
         "RemoteRef": "cli",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
+        "RemoteRepos": "https://pkg.current.posit.team/cran/latest",
+        "RemoteReposName": "CRAN",
         "RemotePkgPlatform": "source",
         "RemoteSha": "3.6.3"
       }
@@ -645,12 +591,12 @@
         "Maintainer": "Matthew Lincoln <matthew.d.lincoln@gmail.com>",
         "Repository": "RSPM",
         "Date/Publication": "2022-02-22 00:58:45 UTC",
-        "Built": "R 4.4.0; ; 2024-04-25 19:46:39 UTC; unix",
+        "Built": "R 4.4.1; ; 2024-10-24 01:15:04 UTC; unix",
         "RemoteType": "standard",
         "RemotePkgRef": "clipr",
         "RemoteRef": "clipr",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
+        "RemoteRepos": "https://pkg.current.posit.team/cran/latest",
+        "RemoteReposName": "CRAN",
         "RemotePkgPlatform": "source",
         "RemoteSha": "0.8.0"
       }
@@ -681,14 +627,7 @@
         "Maintainer": "Achim Zeileis <Achim.Zeileis@R-project.org>",
         "Repository": "RSPM",
         "Date/Publication": "2024-07-26 17:10:02 UTC",
-        "Built": "R 4.4.0; x86_64-pc-linux-gnu; 2024-07-27 04:56:04 UTC; unix",
-        "RemoteType": "standard",
-        "RemotePkgRef": "colorspace",
-        "RemoteRef": "colorspace",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
-        "RemotePkgPlatform": "source",
-        "RemoteSha": "2.1-1"
+        "Built": "R 4.4.0; x86_64-pc-linux-gnu; 2024-07-27 04:56:04 UTC; unix"
       }
     },
     "conflicted": {
@@ -716,14 +655,7 @@
         "Maintainer": "Hadley Wickham <hadley@rstudio.com>",
         "Repository": "RSPM",
         "Date/Publication": "2023-02-01 08:20:06 UTC",
-        "Built": "R 4.4.0; ; 2024-04-24 19:10:40 UTC; unix",
-        "RemoteType": "standard",
-        "RemotePkgRef": "conflicted",
-        "RemoteRef": "conflicted",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
-        "RemotePkgPlatform": "source",
-        "RemoteSha": "1.2.0"
+        "Built": "R 4.4.0; ; 2024-04-24 19:10:40 UTC; unix"
       }
     },
     "cpp11": {
@@ -752,11 +684,11 @@
         "Maintainer": "Davis Vaughan <davis@posit.co>",
         "Repository": "RSPM",
         "Date/Publication": "2024-08-27 04:30:17 UTC",
-        "Built": "R 4.4.0; ; 2024-08-28 04:10:56 UTC; unix",
+        "Built": "R 4.4.1; ; 2024-10-24 01:08:47 UTC; unix",
         "RemoteType": "standard",
         "RemotePkgRef": "cpp11",
         "RemoteRef": "cpp11",
-        "RemoteRepos": "https://pkg.current.posit.team/cran/__linux__/jammy/latest",
+        "RemoteRepos": "https://pkg.current.posit.team/cran/latest",
         "RemoteReposName": "CRAN",
         "RemotePkgPlatform": "source",
         "RemoteSha": "0.5.0"
@@ -786,12 +718,12 @@
         "Maintainer": "Gábor Csárdi <csardi.gabor@gmail.com>",
         "Repository": "RSPM",
         "Date/Publication": "2024-06-20 13:00:02 UTC",
-        "Built": "R 4.4.0; ; 2024-06-21 04:13:44 UTC; unix",
+        "Built": "R 4.4.1; ; 2024-10-24 01:04:40 UTC; unix",
         "RemoteType": "standard",
         "RemotePkgRef": "crayon",
         "RemoteRef": "crayon",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
+        "RemoteRepos": "https://pkg.current.posit.team/cran/latest",
+        "RemoteReposName": "CRAN",
         "RemotePkgPlatform": "source",
         "RemoteSha": "1.5.3"
       }
@@ -822,14 +754,7 @@
         "Maintainer": "Jeroen Ooms <jeroen@berkeley.edu>",
         "Repository": "RSPM",
         "Date/Publication": "2023-09-06 21:32:31 UTC",
-        "Built": "R 4.4.0; ; 2024-04-25 19:46:46 UTC; unix",
-        "RemoteType": "standard",
-        "RemotePkgRef": "credentials",
-        "RemoteRef": "credentials",
-        "RemoteRepos": "https://pkg.current.posit.team/cran/__linux__/jammy/latest",
-        "RemoteReposName": "CRAN",
-        "RemotePkgPlatform": "source",
-        "RemoteSha": "2.0.1"
+        "Built": "R 4.4.0; ; 2024-04-25 19:46:46 UTC; unix"
       }
     },
     "curl": {
@@ -839,33 +764,33 @@
         "Package": "curl",
         "Type": "Package",
         "Title": "A Modern and Flexible Web Client for R",
-        "Version": "5.2.2",
-        "Authors@R": "c(\n    person(\"Jeroen\", \"Ooms\", role = c(\"aut\", \"cre\"), email = \"jeroen@berkeley.edu\",\n      comment = c(ORCID = \"0000-0002-4035-0289\")),\n    person(\"Hadley\", \"Wickham\", , \"hadley@rstudio.com\", role = \"ctb\"),\n    person(\"RStudio\", role = \"cph\")\n    )",
-        "Description": "The curl() and curl_download() functions provide highly\n    configurable drop-in replacements for base url() and download.file() with\n    better performance, support for encryption (https, ftps), gzip compression,\n    authentication, and other 'libcurl' goodies. The core of the package implements a\n    framework for performing fully customized requests where data can be processed\n    either in memory, on disk, or streaming via the callback or connection\n    interfaces. Some knowledge of 'libcurl' is recommended; for a more-user-friendly\n    web client see the 'httr' package which builds on this package with http\n    specific tools and logic.",
+        "Version": "6.0.1",
+        "Authors@R": "c(\n    person(\"Jeroen\", \"Ooms\", role = c(\"aut\", \"cre\"), email = \"jeroenooms@gmail.com\",\n      comment = c(ORCID = \"0000-0002-4035-0289\")),\n    person(\"Hadley\", \"Wickham\", role = \"ctb\"),\n    person(\"Posit Software, PBC\", role = \"cph\"))",
+        "Description": "Bindings to 'libcurl' <https://curl.se/libcurl/> for performing fully\n    configurable HTTP/FTP requests where responses can be processed in memory, on\n    disk, or streaming via the callback or connection interfaces. Some knowledge\n    of 'libcurl' is recommended; for a more-user-friendly web client see the \n    'httr2' package which builds on this package with http specific tools and logic.",
         "License": "MIT + file LICENSE",
-        "SystemRequirements": "libcurl: libcurl-devel (rpm) or\nlibcurl4-openssl-dev (deb).",
-        "URL": "https://jeroen.r-universe.dev/curl https://curl.se/libcurl/",
+        "SystemRequirements": "libcurl (>= 7.62): libcurl-devel (rpm) or\nlibcurl4-openssl-dev (deb)",
+        "URL": "https://jeroen.r-universe.dev/curl",
         "BugReports": "https://github.com/jeroen/curl/issues",
         "Suggests": "spelling, testthat (>= 1.0.0), knitr, jsonlite, later,\nrmarkdown, httpuv (>= 1.4.4), webutils",
         "VignetteBuilder": "knitr",
         "Depends": "R (>= 3.0.0)",
-        "RoxygenNote": "7.3.0",
+        "RoxygenNote": "7.3.2.9000",
         "Encoding": "UTF-8",
         "Language": "en-US",
         "NeedsCompilation": "yes",
-        "Packaged": "2024-08-25 10:08:31 UTC; jeroen",
-        "Author": "Jeroen Ooms [aut, cre] (<https://orcid.org/0000-0002-4035-0289>),\n  Hadley Wickham [ctb],\n  RStudio [cph]",
-        "Maintainer": "Jeroen Ooms <jeroen@berkeley.edu>",
-        "Repository": "RSPM",
-        "Date/Publication": "2024-08-26 09:40:03 UTC",
-        "Built": "R 4.4.0; x86_64-pc-linux-gnu; 2024-08-27 04:24:44 UTC; unix",
+        "Packaged": "2024-11-13 13:14:47 UTC; jeroen",
+        "Author": "Jeroen Ooms [aut, cre] (<https://orcid.org/0000-0002-4035-0289>),\n  Hadley Wickham [ctb],\n  Posit Software, PBC [cph]",
+        "Maintainer": "Jeroen Ooms <jeroenooms@gmail.com>",
+        "Repository": "CRAN",
+        "Date/Publication": "2024-11-14 09:20:02 UTC",
+        "Built": "R 4.4.1; x86_64-pc-linux-gnu; 2024-12-16 18:20:29 UTC; unix",
         "RemoteType": "standard",
         "RemotePkgRef": "curl",
         "RemoteRef": "curl",
-        "RemoteRepos": "https://pkg.current.posit.team/cran/__linux__/jammy/latest",
+        "RemoteRepos": "https://cloud.r-project.org",
         "RemoteReposName": "CRAN",
         "RemotePkgPlatform": "source",
-        "RemoteSha": "5.2.2"
+        "RemoteSha": "6.0.1"
       }
     },
     "data.table": {
@@ -892,14 +817,7 @@
         "Maintainer": "Tyson Barrett <t.barrett88@gmail.com>",
         "Repository": "RSPM",
         "Date/Publication": "2024-08-27 04:20:10 UTC",
-        "Built": "R 4.4.0; x86_64-pc-linux-gnu; 2024-08-28 04:11:03 UTC; unix",
-        "RemoteType": "standard",
-        "RemotePkgRef": "data.table",
-        "RemoteRef": "data.table",
-        "RemoteRepos": "https://pkg.current.posit.team/cran/__linux__/jammy/latest",
-        "RemoteReposName": "CRAN",
-        "RemotePkgPlatform": "source",
-        "RemoteSha": "1.16.0"
+        "Built": "R 4.4.0; x86_64-pc-linux-gnu; 2024-08-28 04:11:03 UTC; unix"
       }
     },
     "dbplyr": {
@@ -932,14 +850,7 @@
         "Maintainer": "Hadley Wickham <hadley@posit.co>",
         "Repository": "RSPM",
         "Date/Publication": "2024-03-19 17:00:05 UTC",
-        "Built": "R 4.4.0; ; 2024-04-25 02:01:08 UTC; unix",
-        "RemoteType": "standard",
-        "RemotePkgRef": "dbplyr",
-        "RemoteRef": "dbplyr",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
-        "RemotePkgPlatform": "source",
-        "RemoteSha": "2.5.0"
+        "Built": "R 4.4.0; ; 2024-04-25 02:01:08 UTC; unix"
       }
     },
     "desc": {
@@ -969,12 +880,12 @@
         "Author": "Gábor Csárdi [aut, cre],\n  Kirill Müller [aut],\n  Jim Hester [aut],\n  Maëlle Salmon [ctb] (<https://orcid.org/0000-0002-2815-0399>),\n  Posit Software, PBC [cph, fnd]",
         "Repository": "RSPM",
         "Date/Publication": "2023-12-10 11:40:08 UTC",
-        "Built": "R 4.4.0; ; 2024-04-25 19:44:59 UTC; unix",
+        "Built": "R 4.4.1; ; 2024-10-24 01:01:23 UTC; unix",
         "RemoteType": "standard",
         "RemotePkgRef": "desc",
         "RemoteRef": "desc",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
+        "RemoteRepos": "https://pkg.current.posit.team/cran/latest",
+        "RemoteReposName": "CRAN",
         "RemotePkgPlatform": "source",
         "RemoteSha": "1.4.3"
       }
@@ -1003,11 +914,11 @@
         "Maintainer": "Dirk Eddelbuettel <edd@debian.org>",
         "Repository": "RSPM",
         "Date/Publication": "2024-08-19 14:10:07 UTC",
-        "Built": "R 4.4.0; x86_64-pc-linux-gnu; 2024-08-20 05:21:59 UTC; unix",
+        "Built": "R 4.4.1; x86_64-pc-linux-gnu; 2024-10-24 01:04:19 UTC; unix",
         "RemoteType": "standard",
         "RemotePkgRef": "digest",
         "RemoteRef": "digest",
-        "RemoteRepos": "https://pkg.current.posit.team/cran/__linux__/jammy/latest",
+        "RemoteRepos": "https://pkg.current.posit.team/cran/latest",
         "RemoteReposName": "CRAN",
         "RemotePkgPlatform": "source",
         "RemoteSha": "0.6.37"
@@ -1070,14 +981,7 @@
         "Maintainer": "Hadley Wickham <hadley@posit.co>",
         "Repository": "RSPM",
         "Date/Publication": "2023-03-22 13:10:05 UTC",
-        "Built": "R 4.4.0; ; 2024-04-24 19:13:02 UTC; unix",
-        "RemoteType": "standard",
-        "RemotePkgRef": "dtplyr",
-        "RemoteRef": "dtplyr",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
-        "RemotePkgPlatform": "source",
-        "RemoteSha": "1.3.1"
+        "Built": "R 4.4.0; ; 2024-04-24 19:13:02 UTC; unix"
       }
     },
     "ellipsis": {
@@ -1103,12 +1007,12 @@
         "Maintainer": "Hadley Wickham <hadley@rstudio.com>",
         "Repository": "RSPM",
         "Date/Publication": "2021-04-29 12:40:02 UTC",
-        "Built": "R 4.4.0; x86_64-pc-linux-gnu; 2024-04-25 19:47:00 UTC; unix",
+        "Built": "R 4.4.1; x86_64-pc-linux-gnu; 2024-10-24 01:01:49 UTC; unix",
         "RemoteType": "standard",
         "RemotePkgRef": "ellipsis",
         "RemoteRef": "ellipsis",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
+        "RemoteRepos": "https://pkg.current.posit.team/cran/latest",
+        "RemoteReposName": "CRAN",
         "RemotePkgPlatform": "source",
         "RemoteSha": "0.3.2"
       }
@@ -1120,33 +1024,32 @@
         "Type": "Package",
         "Package": "evaluate",
         "Title": "Parsing and Evaluation Tools that Provide More Details than the\nDefault",
-        "Version": "0.24.0",
+        "Version": "1.0.1",
         "Authors@R": "c(\n    person(\"Hadley\", \"Wickham\", , \"hadley@posit.co\", role = c(\"aut\", \"cre\")),\n    person(\"Yihui\", \"Xie\", role = \"aut\",\n           comment = c(ORCID = \"0000-0003-0645-5666\")),\n    person(\"Michael\", \"Lawrence\", role = \"ctb\"),\n    person(\"Thomas\", \"Kluyver\", role = \"ctb\"),\n    person(\"Jeroen\", \"Ooms\", role = \"ctb\"),\n    person(\"Barret\", \"Schloerke\", role = \"ctb\"),\n    person(\"Adam\", \"Ryczkowski\", role = \"ctb\"),\n    person(\"Hiroaki\", \"Yutani\", role = \"ctb\"),\n    person(\"Michel\", \"Lang\", role = \"ctb\"),\n    person(\"Karolis\", \"Koncevičius\", role = \"ctb\"),\n    person(\"Posit Software, PBC\", role = c(\"cph\", \"fnd\"))\n  )",
         "Description": "Parsing and evaluation tools that make it easy to recreate\n    the command line behaviour of R.",
         "License": "MIT + file LICENSE",
-        "URL": "https://github.com/r-lib/evaluate",
+        "URL": "https://evaluate.r-lib.org/, https://github.com/r-lib/evaluate",
         "BugReports": "https://github.com/r-lib/evaluate/issues",
-        "Depends": "R (>= 4.0.0)",
-        "Imports": "methods",
-        "Suggests": "covr, ggplot2, lattice, rlang, testthat (>= 3.0.0), withr",
+        "Depends": "R (>= 3.6.0)",
+        "Suggests": "covr, ggplot2 (>= 3.3.6), lattice, methods, rlang, testthat\n(>= 3.0.0), withr",
         "Config/Needs/website": "tidyverse/tidytemplate",
         "Config/testthat/edition": "3",
         "Encoding": "UTF-8",
-        "RoxygenNote": "7.2.3",
+        "RoxygenNote": "7.3.2",
         "NeedsCompilation": "no",
-        "Packaged": "2024-06-10 13:33:57 UTC; hadleywickham",
+        "Packaged": "2024-10-10 12:56:22 UTC; hadleywickham",
         "Author": "Hadley Wickham [aut, cre],\n  Yihui Xie [aut] (<https://orcid.org/0000-0003-0645-5666>),\n  Michael Lawrence [ctb],\n  Thomas Kluyver [ctb],\n  Jeroen Ooms [ctb],\n  Barret Schloerke [ctb],\n  Adam Ryczkowski [ctb],\n  Hiroaki Yutani [ctb],\n  Michel Lang [ctb],\n  Karolis Koncevičius [ctb],\n  Posit Software, PBC [cph, fnd]",
         "Maintainer": "Hadley Wickham <hadley@posit.co>",
         "Repository": "RSPM",
-        "Date/Publication": "2024-06-10 14:10:02 UTC",
-        "Built": "R 4.4.0; ; 2024-06-11 04:12:10 UTC; unix",
+        "Date/Publication": "2024-10-10 13:20:02 UTC",
+        "Built": "R 4.4.1; ; 2024-10-24 01:07:34 UTC; unix",
         "RemoteType": "standard",
         "RemotePkgRef": "evaluate",
         "RemoteRef": "evaluate",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
+        "RemoteRepos": "https://pkg.current.posit.team/cran/latest",
+        "RemoteReposName": "CRAN",
         "RemotePkgPlatform": "source",
-        "RemoteSha": "0.24.0"
+        "RemoteSha": "1.0.1"
       }
     },
     "fansi": {
@@ -1174,12 +1077,12 @@
         "Maintainer": "Brodie Gaslam <brodie.gaslam@yahoo.com>",
         "Repository": "RSPM",
         "Date/Publication": "2023-12-08 03:30:02 UTC",
-        "Built": "R 4.4.0; x86_64-pc-linux-gnu; 2024-04-25 19:46:25 UTC; unix",
+        "Built": "R 4.4.1; x86_64-pc-linux-gnu; 2024-10-24 01:07:37 UTC; unix",
         "RemoteType": "standard",
         "RemotePkgRef": "fansi",
         "RemoteRef": "fansi",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
+        "RemoteRepos": "https://pkg.current.posit.team/cran/latest",
+        "RemoteReposName": "CRAN",
         "RemotePkgPlatform": "source",
         "RemoteSha": "1.0.6"
       }
@@ -1207,14 +1110,7 @@
         "Maintainer": "Thomas Lin Pedersen <thomas.pedersen@posit.co>",
         "Repository": "RSPM",
         "Date/Publication": "2024-05-13 09:33:09 UTC",
-        "Built": "R 4.4.0; x86_64-pc-linux-gnu; 2024-05-14 04:12:15 UTC; unix",
-        "RemoteType": "standard",
-        "RemotePkgRef": "farver",
-        "RemoteRef": "farver",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
-        "RemotePkgPlatform": "source",
-        "RemoteSha": "2.1.2"
+        "Built": "R 4.4.0; x86_64-pc-linux-gnu; 2024-05-14 04:12:15 UTC; unix"
       }
     },
     "fastmap": {
@@ -1238,12 +1134,12 @@
         "Maintainer": "Winston Chang <winston@posit.co>",
         "Repository": "RSPM",
         "Date/Publication": "2024-05-15 09:00:07 UTC",
-        "Built": "R 4.4.0; x86_64-pc-linux-gnu; 2024-05-16 04:12:38 UTC; unix",
+        "Built": "R 4.4.1; x86_64-pc-linux-gnu; 2024-10-24 01:02:19 UTC; unix",
         "RemoteType": "standard",
         "RemotePkgRef": "fastmap",
         "RemoteRef": "fastmap",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
+        "RemoteRepos": "https://pkg.current.posit.team/cran/latest",
+        "RemoteReposName": "CRAN",
         "RemotePkgPlatform": "source",
         "RemoteSha": "1.2.0"
       }
@@ -1307,12 +1203,12 @@
         "Maintainer": "Richard Iannone <rich@posit.co>",
         "Repository": "RSPM",
         "Date/Publication": "2023-08-19 04:52:40 UTC",
-        "Built": "R 4.4.0; ; 2024-04-25 19:47:19 UTC; unix",
+        "Built": "R 4.4.1; ; 2024-10-24 01:04:32 UTC; unix",
         "RemoteType": "standard",
         "RemotePkgRef": "fontawesome",
         "RemoteRef": "fontawesome",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
+        "RemoteRepos": "https://pkg.current.posit.team/cran/latest",
+        "RemoteReposName": "CRAN",
         "RemotePkgPlatform": "source",
         "RemoteSha": "0.5.2"
       }
@@ -1344,14 +1240,7 @@
         "Maintainer": "Hadley Wickham <hadley@rstudio.com>",
         "Repository": "RSPM",
         "Date/Publication": "2023-01-29 22:20:02 UTC",
-        "Built": "R 4.4.0; ; 2024-04-25 19:50:38 UTC; unix",
-        "RemoteType": "standard",
-        "RemotePkgRef": "forcats",
-        "RemoteRef": "forcats",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
-        "RemotePkgPlatform": "source",
-        "RemoteSha": "1.0.0"
+        "Built": "R 4.4.0; ; 2024-04-25 19:50:38 UTC; unix"
       }
     },
     "fs": {
@@ -1384,12 +1273,12 @@
         "Maintainer": "Gábor Csárdi <csardi.gabor@gmail.com>",
         "Repository": "RSPM",
         "Date/Publication": "2024-04-25 12:50:02 UTC",
-        "Built": "R 4.4.0; x86_64-pc-linux-gnu; 2024-04-26 18:11:57 UTC; unix",
+        "Built": "R 4.4.1; x86_64-pc-linux-gnu; 2024-10-24 01:01:52 UTC; unix",
         "RemoteType": "standard",
         "RemotePkgRef": "fs",
         "RemoteRef": "fs",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
+        "RemoteRepos": "https://pkg.current.posit.team/cran/latest",
+        "RemoteReposName": "CRAN",
         "RemotePkgPlatform": "source",
         "RemoteSha": "1.6.4"
       }
@@ -1421,14 +1310,7 @@
         "Maintainer": "Jennifer Bryan <jenny@posit.co>",
         "Repository": "RSPM",
         "Date/Publication": "2023-07-20 18:50:08 UTC",
-        "Built": "R 4.4.0; ; 2024-04-24 19:11:34 UTC; unix",
-        "RemoteType": "standard",
-        "RemotePkgRef": "gargle",
-        "RemoteRef": "gargle",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
-        "RemotePkgPlatform": "source",
-        "RemoteSha": "1.5.2"
+        "Built": "R 4.4.0; ; 2024-04-24 19:11:34 UTC; unix"
       }
     },
     "generics": {
@@ -1485,14 +1367,7 @@
         "Maintainer": "Jeroen Ooms <jeroen@berkeley.edu>",
         "Repository": "RSPM",
         "Date/Publication": "2024-08-16 10:20:02 UTC",
-        "Built": "R 4.4.0; x86_64-pc-linux-gnu; 2024-08-17 05:49:49 UTC; unix",
-        "RemoteType": "standard",
-        "RemotePkgRef": "gert",
-        "RemoteRef": "gert",
-        "RemoteRepos": "https://pkg.current.posit.team/cran/__linux__/jammy/latest",
-        "RemoteReposName": "CRAN",
-        "RemotePkgPlatform": "source",
-        "RemoteSha": "2.1.1"
+        "Built": "R 4.4.0; x86_64-pc-linux-gnu; 2024-08-17 05:49:49 UTC; unix"
       }
     },
     "ggplot2": {
@@ -1524,14 +1399,7 @@
         "Maintainer": "Thomas Lin Pedersen <thomas.pedersen@posit.co>",
         "Repository": "RSPM",
         "Date/Publication": "2024-04-23 08:00:08 UTC",
-        "Built": "R 4.4.0; ; 2024-04-25 19:49:38 UTC; unix",
-        "RemoteType": "standard",
-        "RemotePkgRef": "ggplot2",
-        "RemoteRef": "ggplot2",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
-        "RemotePkgPlatform": "source",
-        "RemoteSha": "3.5.1"
+        "Built": "R 4.4.0; ; 2024-04-25 19:49:38 UTC; unix"
       }
     },
     "gh": {
@@ -1561,11 +1429,11 @@
         "Maintainer": "Gábor Csárdi <csardi.gabor@gmail.com>",
         "Repository": "RSPM",
         "Date/Publication": "2024-03-28 16:40:07 UTC",
-        "Built": "R 4.4.0; ; 2024-04-25 19:49:15 UTC; unix",
+        "Built": "R 4.4.1; ; 2024-10-24 01:15:35 UTC; unix",
         "RemoteType": "standard",
         "RemotePkgRef": "gh",
         "RemoteRef": "gh",
-        "RemoteRepos": "https://pkg.current.posit.team/cran/__linux__/jammy/latest",
+        "RemoteRepos": "https://pkg.current.posit.team/cran/latest",
         "RemoteReposName": "CRAN",
         "RemotePkgPlatform": "source",
         "RemoteSha": "1.4.1"
@@ -1597,11 +1465,11 @@
         "Maintainer": "Gábor Csárdi <csardi.gabor@gmail.com>",
         "Repository": "RSPM",
         "Date/Publication": "2022-09-08 10:42:55 UTC",
-        "Built": "R 4.4.0; ; 2024-04-25 19:47:33 UTC; unix",
+        "Built": "R 4.4.1; ; 2024-10-24 01:15:30 UTC; unix",
         "RemoteType": "standard",
         "RemotePkgRef": "gitcreds",
         "RemoteRef": "gitcreds",
-        "RemoteRepos": "https://pkg.current.posit.team/cran/__linux__/jammy/latest",
+        "RemoteRepos": "https://pkg.current.posit.team/cran/latest",
         "RemoteReposName": "CRAN",
         "RemotePkgPlatform": "source",
         "RemoteSha": "0.1.2"
@@ -1634,14 +1502,7 @@
         "Maintainer": "Jennifer Bryan <jenny@posit.co>",
         "Repository": "RSPM",
         "Date/Publication": "2024-01-09 23:13:08 UTC",
-        "Built": "R 4.4.0; x86_64-pc-linux-gnu; 2024-04-25 19:45:13 UTC; unix",
-        "RemoteType": "standard",
-        "RemotePkgRef": "glue",
-        "RemoteRef": "glue",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
-        "RemotePkgPlatform": "source",
-        "RemoteSha": "1.7.0"
+        "Built": "R 4.4.0; x86_64-pc-linux-gnu; 2024-04-25 19:45:13 UTC; unix"
       }
     },
     "googledrive": {
@@ -1671,14 +1532,7 @@
         "Maintainer": "Jennifer Bryan <jenny@posit.co>",
         "Repository": "RSPM",
         "Date/Publication": "2023-06-11 19:30:08 UTC",
-        "Built": "R 4.4.0; ; 2024-04-24 19:12:22 UTC; unix",
-        "RemoteType": "standard",
-        "RemotePkgRef": "googledrive",
-        "RemoteRef": "googledrive",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
-        "RemotePkgPlatform": "source",
-        "RemoteSha": "2.1.1"
+        "Built": "R 4.4.0; ; 2024-04-24 19:12:22 UTC; unix"
       }
     },
     "googlesheets4": {
@@ -1708,14 +1562,7 @@
         "Maintainer": "Jennifer Bryan <jenny@posit.co>",
         "Repository": "RSPM",
         "Date/Publication": "2023-06-11 04:00:02 UTC",
-        "Built": "R 4.4.0; ; 2024-04-24 19:13:13 UTC; unix",
-        "RemoteType": "standard",
-        "RemotePkgRef": "googlesheets4",
-        "RemoteRef": "googlesheets4",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
-        "RemotePkgPlatform": "source",
-        "RemoteSha": "1.1.1"
+        "Built": "R 4.4.0; ; 2024-04-24 19:13:13 UTC; unix"
       }
     },
     "gtable": {
@@ -1744,14 +1591,7 @@
         "Maintainer": "Thomas Lin Pedersen <thomas.pedersen@posit.co>",
         "Repository": "RSPM",
         "Date/Publication": "2024-04-22 20:40:02 UTC",
-        "Built": "R 4.4.0; ; 2024-04-25 19:45:38 UTC; unix",
-        "RemoteType": "standard",
-        "RemotePkgRef": "gtable",
-        "RemoteRef": "gtable",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
-        "RemotePkgPlatform": "source",
-        "RemoteSha": "0.3.5"
+        "Built": "R 4.4.0; ; 2024-04-25 19:45:38 UTC; unix"
       }
     },
     "haven": {
@@ -1782,14 +1622,7 @@
         "Maintainer": "Hadley Wickham <hadley@posit.co>",
         "Repository": "RSPM",
         "Date/Publication": "2023-11-30 15:10:02 UTC",
-        "Built": "R 4.4.0; x86_64-pc-linux-gnu; 2024-04-25 19:53:03 UTC; unix",
-        "RemoteType": "standard",
-        "RemotePkgRef": "haven",
-        "RemoteRef": "haven",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
-        "RemotePkgPlatform": "source",
-        "RemoteSha": "2.5.4"
+        "Built": "R 4.4.0; x86_64-pc-linux-gnu; 2024-08-28 04:14:54 UTC; unix"
       }
     },
     "highr": {
@@ -1817,12 +1650,12 @@
         "Maintainer": "Yihui Xie <xie@yihui.name>",
         "Repository": "RSPM",
         "Date/Publication": "2024-05-26 20:00:03 UTC",
-        "Built": "R 4.4.0; ; 2024-05-27 04:07:46 UTC; unix",
+        "Built": "R 4.4.1; ; 2024-10-24 01:11:05 UTC; unix",
         "RemoteType": "standard",
         "RemotePkgRef": "highr",
         "RemoteRef": "highr",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
+        "RemoteRepos": "https://pkg.current.posit.team/cran/latest",
+        "RemoteReposName": "CRAN",
         "RemotePkgPlatform": "source",
         "RemoteSha": "0.11"
       }
@@ -1885,12 +1718,12 @@
         "Maintainer": "Carson Sievert <carson@posit.co>",
         "Repository": "RSPM",
         "Date/Publication": "2024-04-04 05:03:00 UTC",
-        "Built": "R 4.4.0; x86_64-pc-linux-gnu; 2024-04-25 19:47:03 UTC; unix",
+        "Built": "R 4.4.1; x86_64-pc-linux-gnu; 2024-10-24 01:04:25 UTC; unix",
         "RemoteType": "standard",
         "RemotePkgRef": "htmltools",
         "RemoteRef": "htmltools",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
+        "RemoteRepos": "https://pkg.current.posit.team/cran/latest",
+        "RemoteReposName": "CRAN",
         "RemotePkgPlatform": "source",
         "RemoteSha": "0.5.8.1"
       }
@@ -1918,16 +1751,9 @@
         "Packaged": "2023-08-15 02:56:56 UTC; hadleywickham",
         "Author": "Hadley Wickham [aut, cre],\n  Posit, PBC [cph, fnd]",
         "Maintainer": "Hadley Wickham <hadley@posit.co>",
-        "Repository": "RSPM",
+        "Repository": "CRAN",
         "Date/Publication": "2023-08-15 09:00:02 UTC",
-        "Built": "R 4.4.0; ; 2024-04-25 19:47:21 UTC; unix",
-        "RemoteType": "standard",
-        "RemotePkgRef": "httr",
-        "RemoteRef": "httr",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
-        "RemotePkgPlatform": "source",
-        "RemoteSha": "1.4.7"
+        "Built": "R 4.4.0; ; 2024-12-12 14:40:27 UTC; unix"
       }
     },
     "httr2": {
@@ -1936,35 +1762,36 @@
       "description": {
         "Package": "httr2",
         "Title": "Perform HTTP Requests and Process the Responses",
-        "Version": "1.0.3",
+        "Version": "1.0.7",
         "Authors@R": "c(\n    person(\"Hadley\", \"Wickham\", , \"hadley@posit.co\", role = c(\"aut\", \"cre\")),\n    person(\"Posit Software, PBC\", role = c(\"cph\", \"fnd\")),\n    person(\"Maximilian\", \"Girlich\", role = \"ctb\")\n  )",
         "Description": "Tools for creating and modifying HTTP requests, then\n    performing them and processing the results. 'httr2' is a modern\n    re-imagining of 'httr' that uses a pipe-based interface and solves\n    more of the problems that API wrapping packages face.",
         "License": "MIT + file LICENSE",
         "URL": "https://httr2.r-lib.org, https://github.com/r-lib/httr2",
         "BugReports": "https://github.com/r-lib/httr2/issues",
         "Depends": "R (>= 4.0)",
-        "Imports": "cli (>= 3.0.0), curl (>= 5.1.0), glue, lifecycle, magrittr,\nopenssl, R6, rappdirs, rlang (>= 1.1.0), vctrs (>= 0.6.3),\nwithr",
-        "Suggests": "askpass, bench, clipr, covr, docopt, httpuv, jose, jsonlite,\nknitr, later, promises, rmarkdown, testthat (>= 3.1.8), tibble,\nwebfakes, xml2",
+        "Imports": "cli (>= 3.0.0), curl (>= 6.0.1), glue, lifecycle, magrittr,\nopenssl, R6, rappdirs, rlang (>= 1.1.0), vctrs (>= 0.6.3),\nwithr",
+        "Suggests": "askpass, bench, clipr, covr, docopt, httpuv, jose, jsonlite,\nknitr, later (>= 1.4.0), paws.common, promises, rmarkdown,\ntestthat (>= 3.1.8), tibble, webfakes, xml2",
         "VignetteBuilder": "knitr",
         "Config/Needs/website": "tidyverse/tidytemplate",
         "Config/testthat/edition": "3",
         "Config/testthat/parallel": "true",
+        "Config/testthat/start-first": "resp-stream, req-perform",
         "Encoding": "UTF-8",
         "RoxygenNote": "7.3.2",
         "NeedsCompilation": "no",
-        "Packaged": "2024-08-21 14:07:00 UTC; hadleywickham",
+        "Packaged": "2024-11-26 13:45:28 UTC; hadleywickham",
         "Author": "Hadley Wickham [aut, cre],\n  Posit Software, PBC [cph, fnd],\n  Maximilian Girlich [ctb]",
         "Maintainer": "Hadley Wickham <hadley@posit.co>",
         "Repository": "RSPM",
-        "Date/Publication": "2024-08-22 03:20:06 UTC",
-        "Built": "R 4.4.0; ; 2024-08-22 04:03:32 UTC; unix",
+        "Date/Publication": "2024-11-26 23:00:07 UTC",
+        "Built": "R 4.4.0; ; 2024-11-27 04:15:30 UTC; unix",
         "RemoteType": "standard",
         "RemotePkgRef": "httr2",
         "RemoteRef": "httr2",
-        "RemoteRepos": "https://pkg.current.posit.team/cran/__linux__/jammy/latest",
+        "RemoteRepos": "https://p3m.dev/cran/__linux__/jammy/latest",
         "RemoteReposName": "CRAN",
         "RemotePkgPlatform": "source",
-        "RemoteSha": "1.0.3"
+        "RemoteSha": "1.0.7"
       }
     },
     "ids": {
@@ -1990,14 +1817,7 @@
         "Repository": "RSPM",
         "Date/Publication": "2017-05-31 08:49:59 UTC",
         "Encoding": "UTF-8",
-        "Built": "R 4.4.0; ; 2024-04-24 19:11:06 UTC; unix",
-        "RemoteType": "standard",
-        "RemotePkgRef": "ids",
-        "RemoteRef": "ids",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
-        "RemotePkgPlatform": "source",
-        "RemoteSha": "1.0.1"
+        "Built": "R 4.4.0; ; 2024-04-24 19:11:06 UTC; unix"
       }
     },
     "ini": {
@@ -2023,11 +1843,11 @@
         "Repository": "RSPM",
         "Date/Publication": "2018-05-20 03:26:39 UTC",
         "Encoding": "UTF-8",
-        "Built": "R 4.4.0; ; 2024-04-25 19:46:29 UTC; unix",
+        "Built": "R 4.4.1; ; 2024-10-24 01:15:33 UTC; unix",
         "RemoteType": "standard",
         "RemotePkgRef": "ini",
         "RemoteRef": "ini",
-        "RemoteRepos": "https://pkg.current.posit.team/cran/__linux__/jammy/latest",
+        "RemoteRepos": "https://pkg.current.posit.team/cran/latest",
         "RemoteReposName": "CRAN",
         "RemotePkgPlatform": "source",
         "RemoteSha": "0.3.1"
@@ -2059,14 +1879,7 @@
         "Maintainer": "Hadley Wickham <hadley@posit.co>",
         "Repository": "RSPM",
         "Date/Publication": "2022-12-20 10:00:13 UTC",
-        "Built": "R 4.4.0; x86_64-pc-linux-gnu; 2024-04-25 19:41:58 UTC; unix",
-        "RemoteType": "standard",
-        "RemotePkgRef": "isoband",
-        "RemoteRef": "isoband",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
-        "RemotePkgPlatform": "source",
-        "RemoteSha": "0.2.7"
+        "Built": "R 4.4.0; x86_64-pc-linux-gnu; 2024-04-25 19:41:58 UTC; unix"
       }
     },
     "janitor": {
@@ -2118,12 +1931,12 @@
         "Maintainer": "Carson Sievert <carson@rstudio.com>",
         "Repository": "RSPM",
         "Date/Publication": "2021-04-26 17:10:02 UTC",
-        "Built": "R 4.4.0; ; 2024-04-25 19:47:18 UTC; unix",
+        "Built": "R 4.4.1; ; 2024-10-24 01:04:55 UTC; unix",
         "RemoteType": "standard",
         "RemotePkgRef": "jquerylib",
         "RemoteRef": "jquerylib",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
+        "RemoteRepos": "https://pkg.current.posit.team/cran/latest",
+        "RemoteReposName": "CRAN",
         "RemotePkgPlatform": "source",
         "RemoteSha": "0.1.4"
       }
@@ -2151,14 +1964,7 @@
         "Author": "Jeroen Ooms [aut, cre] (<https://orcid.org/0000-0002-4035-0289>),\n  Duncan Temple Lang [ctb],\n  Lloyd Hilaiel [cph] (author of bundled libyajl)",
         "Repository": "RSPM",
         "Date/Publication": "2023-12-04 15:20:02 UTC",
-        "Built": "R 4.4.0; x86_64-pc-linux-gnu; 2024-04-25 19:46:13 UTC; unix",
-        "RemoteType": "standard",
-        "RemotePkgRef": "jsonlite",
-        "RemoteRef": "jsonlite",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
-        "RemotePkgPlatform": "source",
-        "RemoteSha": "1.8.8"
+        "Built": "R 4.4.0; x86_64-pc-linux-gnu; 2024-04-25 19:46:13 UTC; unix"
       }
     },
     "knitr": {
@@ -2188,12 +1994,12 @@
         "Maintainer": "Yihui Xie <xie@yihui.name>",
         "Repository": "RSPM",
         "Date/Publication": "2024-07-07 14:00:01 UTC",
-        "Built": "R 4.4.0; ; 2024-07-08 04:11:15 UTC; unix",
+        "Built": "R 4.4.1; ; 2024-10-24 01:11:08 UTC; unix",
         "RemoteType": "standard",
         "RemotePkgRef": "knitr",
         "RemoteRef": "knitr",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
+        "RemoteRepos": "https://pkg.current.posit.team/cran/latest",
+        "RemoteReposName": "CRAN",
         "RemotePkgPlatform": "source",
         "RemoteSha": "1.48"
       }
@@ -2218,14 +2024,7 @@
         "Repository": "RSPM",
         "Date/Publication": "2023-08-29 22:20:02 UTC",
         "Encoding": "UTF-8",
-        "Built": "R 4.4.0; ; 2024-04-25 19:43:43 UTC; unix",
-        "RemoteType": "standard",
-        "RemotePkgRef": "labeling",
-        "RemoteRef": "labeling",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
-        "RemotePkgPlatform": "source",
-        "RemoteSha": "0.4.3"
+        "Built": "R 4.4.0; ; 2024-04-25 19:43:43 UTC; unix"
       }
     },
     "lattice": {
@@ -2254,7 +2053,7 @@
         "Maintainer": "Deepayan Sarkar <deepayan.sarkar@r-project.org>",
         "Repository": "CRAN",
         "Date/Publication": "2024-03-20 06:10:02 UTC",
-        "Built": "R 4.4.0; x86_64-pc-linux-gnu; 2024-08-22 01:53:04 UTC; unix"
+        "Built": "R 4.4.1; x86_64-pc-linux-gnu; 2024-08-22 01:54:07 UTC; unix"
       }
     },
     "lifecycle": {
@@ -2283,12 +2082,12 @@
         "Maintainer": "Lionel Henry <lionel@posit.co>",
         "Repository": "RSPM",
         "Date/Publication": "2023-11-07 10:10:10 UTC",
-        "Built": "R 4.4.0; ; 2024-04-25 19:45:24 UTC; unix",
+        "Built": "R 4.4.1; ; 2024-10-24 01:02:15 UTC; unix",
         "RemoteType": "standard",
         "RemotePkgRef": "lifecycle",
         "RemoteRef": "lifecycle",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
+        "RemoteRepos": "https://pkg.current.posit.team/cran/latest",
+        "RemoteReposName": "CRAN",
         "RemotePkgPlatform": "source",
         "RemoteSha": "1.0.4"
       }
@@ -2353,12 +2152,12 @@
         "Maintainer": "Lionel Henry <lionel@rstudio.com>",
         "Repository": "RSPM",
         "Date/Publication": "2022-03-30 07:30:09 UTC",
-        "Built": "R 4.4.0; x86_64-pc-linux-gnu; 2024-04-25 19:46:44 UTC; unix",
+        "Built": "R 4.4.1; x86_64-pc-linux-gnu; 2024-10-24 01:03:12 UTC; unix",
         "RemoteType": "standard",
         "RemotePkgRef": "magrittr",
         "RemoteRef": "magrittr",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
+        "RemoteRepos": "https://pkg.current.posit.team/cran/latest",
+        "RemoteReposName": "CRAN",
         "RemotePkgPlatform": "source",
         "RemoteSha": "2.0.3"
       }
@@ -2385,12 +2184,12 @@
         "Maintainer": "Winston Chang <winston@rstudio.com>",
         "Repository": "RSPM",
         "Date/Publication": "2021-11-26 16:11:10 UTC",
-        "Built": "R 4.4.0; ; 2024-04-25 19:48:04 UTC; unix",
+        "Built": "R 4.4.1; ; 2024-10-24 01:02:25 UTC; unix",
         "RemoteType": "standard",
         "RemotePkgRef": "memoise",
         "RemoteRef": "memoise",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
+        "RemoteRepos": "https://pkg.current.posit.team/cran/latest",
+        "RemoteReposName": "CRAN",
         "RemotePkgPlatform": "source",
         "RemoteSha": "2.0.1"
       }
@@ -2416,7 +2215,7 @@
         "Packaged": "2023-12-20 10:39:06 UTC; sw283",
         "Repository": "CRAN",
         "Date/Publication": "2023-12-21 00:30:02 UTC",
-        "Built": "R 4.4.0; x86_64-pc-linux-gnu; 2024-08-22 01:56:45 UTC; unix"
+        "Built": "R 4.4.1; x86_64-pc-linux-gnu; 2024-08-22 01:57:44 UTC; unix"
       }
     },
     "mime": {
@@ -2441,12 +2240,12 @@
         "Maintainer": "Yihui Xie <xie@yihui.name>",
         "Repository": "RSPM",
         "Date/Publication": "2021-09-28 05:00:05 UTC",
-        "Built": "R 4.4.0; x86_64-pc-linux-gnu; 2024-04-25 19:46:59 UTC; unix",
+        "Built": "R 4.4.1; x86_64-pc-linux-gnu; 2024-10-24 01:04:05 UTC; unix",
         "RemoteType": "standard",
         "RemotePkgRef": "mime",
         "RemoteRef": "mime",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
+        "RemoteRepos": "https://pkg.current.posit.team/cran/latest",
+        "RemoteReposName": "CRAN",
         "RemotePkgPlatform": "source",
         "RemoteSha": "0.12"
       }
@@ -2477,14 +2276,7 @@
         "Maintainer": "Hadley Wickham <hadley@posit.co>",
         "Repository": "RSPM",
         "Date/Publication": "2023-03-22 13:00:07 UTC",
-        "Built": "R 4.4.0; ; 2024-04-24 19:14:08 UTC; unix",
-        "RemoteType": "standard",
-        "RemotePkgRef": "modelr",
-        "RemoteRef": "modelr",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
-        "RemotePkgPlatform": "source",
-        "RemoteSha": "0.1.11"
+        "Built": "R 4.4.0; ; 2024-04-24 19:14:08 UTC; unix"
       }
     },
     "munsell": {
@@ -2509,14 +2301,7 @@
         "Packaged": "2024-04-01 20:42:09 UTC; charlottewickham",
         "Repository": "RSPM",
         "Date/Publication": "2024-04-01 23:40:10 UTC",
-        "Built": "R 4.4.0; ; 2024-04-25 19:45:43 UTC; unix",
-        "RemoteType": "standard",
-        "RemotePkgRef": "munsell",
-        "RemoteRef": "munsell",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
-        "RemotePkgPlatform": "source",
-        "RemoteSha": "0.5.1"
+        "Built": "R 4.4.0; ; 2024-04-25 19:45:43 UTC; unix"
       }
     },
     "nlme": {
@@ -2546,7 +2331,7 @@
         "Maintainer": "R Core Team <R-core@R-project.org>",
         "Repository": "CRAN",
         "Date/Publication": "2023-11-27 15:26:12 UTC",
-        "Built": "R 4.4.0; x86_64-pc-linux-gnu; 2024-08-22 01:55:35 UTC; unix"
+        "Built": "R 4.4.1; x86_64-pc-linux-gnu; 2024-08-22 01:56:37 UTC; unix"
       }
     },
     "odbc": {
@@ -2608,14 +2393,7 @@
         "Maintainer": "Jeroen Ooms <jeroen@berkeley.edu>",
         "Repository": "RSPM",
         "Date/Publication": "2024-08-16 10:00:02 UTC",
-        "Built": "R 4.4.0; x86_64-pc-linux-gnu; 2024-08-17 05:45:01 UTC; unix",
-        "RemoteType": "standard",
-        "RemotePkgRef": "openssl",
-        "RemoteRef": "openssl",
-        "RemoteRepos": "https://pkg.current.posit.team/cran/__linux__/jammy/latest",
-        "RemoteReposName": "CRAN",
-        "RemotePkgPlatform": "source",
-        "RemoteSha": "2.2.1"
+        "Built": "R 4.4.0; x86_64-pc-linux-gnu; 2024-08-17 05:45:01 UTC; unix"
       }
     },
     "pillar": {
@@ -2648,12 +2426,12 @@
         "Maintainer": "Kirill Müller <kirill@cynkra.com>",
         "Repository": "RSPM",
         "Date/Publication": "2023-03-22 08:10:02 UTC",
-        "Built": "R 4.4.0; ; 2024-04-25 19:48:04 UTC; unix",
+        "Built": "R 4.4.1; ; 2024-10-24 01:11:41 UTC; unix",
         "RemoteType": "standard",
         "RemotePkgRef": "pillar",
         "RemoteRef": "pillar",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
+        "RemoteRepos": "https://pkg.current.posit.team/cran/latest",
+        "RemoteReposName": "CRAN",
         "RemotePkgPlatform": "source",
         "RemoteSha": "1.9.0"
       }
@@ -2685,14 +2463,7 @@
         "Maintainer": "Julia Silge <julia.silge@posit.co>",
         "Repository": "RSPM",
         "Date/Publication": "2023-11-09 17:30:02 UTC",
-        "Built": "R 4.4.0; ; 2024-04-24 23:04:29 UTC; unix",
-        "RemoteType": "standard",
-        "RemotePkgRef": "pins",
-        "RemoteRef": "pins",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
-        "RemotePkgPlatform": "source",
-        "RemoteSha": "1.3.0"
+        "Built": "R 4.4.0; ; 2024-04-24 23:04:29 UTC; unix"
       }
     },
     "pkgconfig": {
@@ -2716,12 +2487,12 @@
         "Packaged": "2019-09-22 08:42:40 UTC; gaborcsardi",
         "Repository": "RSPM",
         "Date/Publication": "2019-09-22 09:20:02 UTC",
-        "Built": "R 4.4.0; ; 2024-04-25 19:38:43 UTC; unix",
+        "Built": "R 4.4.1; ; 2024-10-24 01:11:49 UTC; unix",
         "RemoteType": "standard",
         "RemotePkgRef": "pkgconfig",
         "RemoteRef": "pkgconfig",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
+        "RemoteRepos": "https://pkg.current.posit.team/cran/latest",
+        "RemoteReposName": "CRAN",
         "RemotePkgPlatform": "source",
         "RemoteSha": "2.0.3"
       }
@@ -2748,12 +2519,12 @@
         "Maintainer": "Gabor Csardi <csardi.gabor@gmail.com>",
         "Repository": "RSPM",
         "Date/Publication": "2023-09-24 21:10:02 UTC",
-        "Built": "R 4.4.0; ; 2024-04-25 19:39:05 UTC; unix",
+        "Built": "R 4.4.1; ; 2024-10-24 01:12:40 UTC; unix",
         "RemoteType": "standard",
         "RemotePkgRef": "prettyunits",
         "RemoteRef": "prettyunits",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
+        "RemoteRepos": "https://pkg.current.posit.team/cran/latest",
+        "RemoteReposName": "CRAN",
         "RemotePkgPlatform": "source",
         "RemoteSha": "1.2.0"
       }
@@ -2783,12 +2554,12 @@
         "Maintainer": "Gábor Csárdi <csardi.gabor@gmail.com>",
         "Repository": "RSPM",
         "Date/Publication": "2024-03-16 14:50:02 UTC",
-        "Built": "R 4.4.0; x86_64-pc-linux-gnu; 2024-04-25 19:47:28 UTC; unix",
+        "Built": "R 4.4.1; x86_64-pc-linux-gnu; 2024-10-24 01:07:14 UTC; unix",
         "RemoteType": "standard",
         "RemotePkgRef": "processx",
         "RemoteRef": "processx",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
+        "RemoteRepos": "https://pkg.current.posit.team/cran/latest",
+        "RemoteReposName": "CRAN",
         "RemotePkgPlatform": "source",
         "RemoteSha": "3.8.4"
       }
@@ -2818,14 +2589,7 @@
         "Maintainer": "Gábor Csárdi <csardi.gabor@gmail.com>",
         "Repository": "RSPM",
         "Date/Publication": "2023-12-06 10:30:02 UTC",
-        "Built": "R 4.4.0; ; 2024-04-25 19:46:47 UTC; unix",
-        "RemoteType": "standard",
-        "RemotePkgRef": "progress",
-        "RemoteRef": "progress",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
-        "RemotePkgPlatform": "source",
-        "RemoteSha": "1.2.3"
+        "Built": "R 4.4.0; ; 2024-04-25 19:46:47 UTC; unix"
       }
     },
     "ps": {
@@ -2854,14 +2618,7 @@
         "Maintainer": "Gábor Csárdi <csardi.gabor@gmail.com>",
         "Repository": "RSPM",
         "Date/Publication": "2024-07-02 18:10:02 UTC",
-        "Built": "R 4.4.0; x86_64-pc-linux-gnu; 2024-07-03 04:09:44 UTC; unix",
-        "RemoteType": "standard",
-        "RemotePkgRef": "ps",
-        "RemoteRef": "ps",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
-        "RemotePkgPlatform": "source",
-        "RemoteSha": "1.7.7"
+        "Built": "R 4.4.0; x86_64-pc-linux-gnu; 2024-07-03 04:09:44 UTC; unix"
       }
     },
     "purrr": {
@@ -2892,12 +2649,12 @@
         "Maintainer": "Hadley Wickham <hadley@rstudio.com>",
         "Repository": "RSPM",
         "Date/Publication": "2023-08-10 08:20:07 UTC",
-        "Built": "R 4.4.0; x86_64-pc-linux-gnu; 2024-06-22 04:20:29 UTC; unix",
+        "Built": "R 4.4.1; x86_64-pc-linux-gnu; 2024-10-24 01:08:40 UTC; unix",
         "RemoteType": "standard",
         "RemotePkgRef": "purrr",
         "RemoteRef": "purrr",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
+        "RemoteRepos": "https://pkg.current.posit.team/cran/latest",
+        "RemoteReposName": "CRAN",
         "RemotePkgPlatform": "source",
         "RemoteSha": "1.0.2"
       }
@@ -2929,14 +2686,7 @@
         "Author": "Thomas Lin Pedersen [cre, aut]\n    (<https://orcid.org/0000-0002-5147-4711>),\n  Maxim Shemanarev [aut, cph] (Author of AGG),\n  Tony Juricic [ctb, cph] (Contributor to AGG),\n  Milan Marusinec [ctb, cph] (Contributor to AGG),\n  Spencer Garrett [ctb] (Contributor to AGG),\n  Posit, PBC [cph, fnd]",
         "Repository": "RSPM",
         "Date/Publication": "2024-05-15 07:00:02 UTC",
-        "Built": "R 4.4.0; x86_64-pc-linux-gnu; 2024-05-25 04:10:01 UTC; unix",
-        "RemoteType": "standard",
-        "RemotePkgRef": "ragg",
-        "RemoteRef": "ragg",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
-        "RemotePkgPlatform": "source",
-        "RemoteSha": "1.3.2"
+        "Built": "R 4.4.0; x86_64-pc-linux-gnu; 2024-05-16 04:14:14 UTC; unix"
       }
     },
     "rappdirs": {
@@ -2964,12 +2714,12 @@
         "Maintainer": "Hadley Wickham <hadley@rstudio.com>",
         "Repository": "RSPM",
         "Date/Publication": "2021-01-31 05:40:02 UTC",
-        "Built": "R 4.4.0; x86_64-pc-linux-gnu; 2024-04-25 19:39:17 UTC; unix",
+        "Built": "R 4.4.1; x86_64-pc-linux-gnu; 2024-10-24 01:04:58 UTC; unix",
         "RemoteType": "standard",
         "RemotePkgRef": "rappdirs",
         "RemoteRef": "rappdirs",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
+        "RemoteRepos": "https://pkg.current.posit.team/cran/latest",
+        "RemoteReposName": "CRAN",
         "RemotePkgPlatform": "source",
         "RemoteSha": "0.3.3"
       }
@@ -3003,14 +2753,7 @@
         "Maintainer": "Jennifer Bryan <jenny@posit.co>",
         "Repository": "RSPM",
         "Date/Publication": "2024-01-10 23:20:02 UTC",
-        "Built": "R 4.4.0; x86_64-pc-linux-gnu; 2024-04-25 19:51:50 UTC; unix",
-        "RemoteType": "standard",
-        "RemotePkgRef": "readr",
-        "RemoteRef": "readr",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
-        "RemotePkgPlatform": "source",
-        "RemoteSha": "2.1.5"
+        "Built": "R 4.4.0; x86_64-pc-linux-gnu; 2024-08-28 04:13:54 UTC; unix"
       }
     },
     "readxl": {
@@ -3041,14 +2784,7 @@
         "Maintainer": "Jennifer Bryan <jenny@posit.co>",
         "Repository": "RSPM",
         "Date/Publication": "2023-07-06 22:00:09 UTC",
-        "Built": "R 4.4.0; x86_64-pc-linux-gnu; 2024-04-25 01:57:20 UTC; unix",
-        "RemoteType": "standard",
-        "RemotePkgRef": "readxl",
-        "RemoteRef": "readxl",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
-        "RemotePkgPlatform": "source",
-        "RemoteSha": "1.4.3"
+        "Built": "R 4.4.0; x86_64-pc-linux-gnu; 2024-08-28 04:11:51 UTC; unix"
       }
     },
     "rematch": {
@@ -3071,14 +2807,7 @@
         "Packaged": "2023-08-30 12:10:51 UTC; gaborcsardi",
         "Repository": "RSPM",
         "Date/Publication": "2023-08-30 16:50:02 UTC",
-        "Built": "R 4.4.0; ; 2024-04-25 03:24:01 UTC; unix",
-        "RemoteType": "standard",
-        "RemotePkgRef": "rematch",
-        "RemoteRef": "rematch",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
-        "RemotePkgPlatform": "source",
-        "RemoteSha": "2.0.0"
+        "Built": "R 4.4.0; ; 2024-04-25 03:24:01 UTC; unix"
       }
     },
     "rematch2": {
@@ -3104,12 +2833,12 @@
         "Maintainer": "Gábor Csárdi <csardi.gabor@gmail.com>",
         "Repository": "RSPM",
         "Date/Publication": "2020-05-01 06:50:02 UTC",
-        "Built": "R 4.4.0; ; 2024-04-25 19:49:57 UTC; unix",
+        "Built": "R 4.4.1; ; 2024-10-24 01:14:29 UTC; unix",
         "RemoteType": "standard",
         "RemotePkgRef": "rematch2",
         "RemoteRef": "rematch2",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
+        "RemoteRepos": "https://pkg.current.posit.team/cran/latest",
+        "RemoteReposName": "CRAN",
         "RemotePkgPlatform": "source",
         "RemoteSha": "2.1.2"
       }
@@ -3144,14 +2873,7 @@
         "Maintainer": "Jennifer Bryan <jenny@posit.co>",
         "Repository": "RSPM",
         "Date/Publication": "2024-07-06 13:50:01 UTC",
-        "Built": "R 4.4.0; ; 2024-07-07 05:17:40 UTC; unix",
-        "RemoteType": "standard",
-        "RemotePkgRef": "reprex",
-        "RemoteRef": "reprex",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
-        "RemotePkgPlatform": "source",
-        "RemoteSha": "2.1.1"
+        "Built": "R 4.4.0; ; 2024-07-07 05:17:40 UTC; unix"
       }
     },
     "rlang": {
@@ -3182,12 +2904,12 @@
         "Maintainer": "Lionel Henry <lionel@posit.co>",
         "Repository": "RSPM",
         "Date/Publication": "2024-06-04 09:45:03 UTC",
-        "Built": "R 4.4.0; x86_64-pc-linux-gnu; 2024-06-05 11:46:17 UTC; unix",
+        "Built": "R 4.4.1; x86_64-pc-linux-gnu; 2024-10-24 01:01:29 UTC; unix",
         "RemoteType": "standard",
         "RemotePkgRef": "rlang",
         "RemoteRef": "rlang",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
+        "RemoteRepos": "https://pkg.current.posit.team/cran/latest",
+        "RemoteReposName": "CRAN",
         "RemotePkgPlatform": "source",
         "RemoteSha": "1.1.4"
       }
@@ -3220,11 +2942,11 @@
         "Author": "JJ Allaire [aut],\n  Yihui Xie [aut, cre] (<https://orcid.org/0000-0003-0645-5666>),\n  Christophe Dervieux [aut] (<https://orcid.org/0000-0003-4474-2498>),\n  Jonathan McPherson [aut],\n  Javier Luraschi [aut],\n  Kevin Ushey [aut],\n  Aron Atkins [aut],\n  Hadley Wickham [aut],\n  Joe Cheng [aut],\n  Winston Chang [aut],\n  Richard Iannone [aut] (<https://orcid.org/0000-0003-3925-190X>),\n  Andrew Dunning [ctb] (<https://orcid.org/0000-0003-0464-5036>),\n  Atsushi Yasumoto [ctb, cph] (<https://orcid.org/0000-0002-8335-495X>,\n    Number sections Lua filter),\n  Barret Schloerke [ctb],\n  Carson Sievert [ctb] (<https://orcid.org/0000-0002-4958-2844>),\n  Devon Ryan [ctb] (<https://orcid.org/0000-0002-8549-0971>),\n  Frederik Aust [ctb] (<https://orcid.org/0000-0003-4900-788X>),\n  Jeff Allen [ctb],\n  JooYoung Seo [ctb] (<https://orcid.org/0000-0002-4064-6012>),\n  Malcolm Barrett [ctb],\n  Rob Hyndman [ctb],\n  Romain Lesur [ctb],\n  Roy Storey [ctb],\n  Ruben Arslan [ctb],\n  Sergio Oller [ctb],\n  Posit Software, PBC [cph, fnd],\n  jQuery UI contributors [ctb, cph] (jQuery UI library; authors listed in\n    inst/rmd/h/jqueryui/AUTHORS.txt),\n  Mark Otto [ctb] (Bootstrap library),\n  Jacob Thornton [ctb] (Bootstrap library),\n  Bootstrap contributors [ctb] (Bootstrap library),\n  Twitter, Inc [cph] (Bootstrap library),\n  Alexander Farkas [ctb, cph] (html5shiv library),\n  Scott Jehl [ctb, cph] (Respond.js library),\n  Ivan Sagalaev [ctb, cph] (highlight.js library),\n  Greg Franko [ctb, cph] (tocify library),\n  John MacFarlane [ctb, cph] (Pandoc templates),\n  Google, Inc. [ctb, cph] (ioslides library),\n  Dave Raggett [ctb] (slidy library),\n  W3C [cph] (slidy library),\n  Dave Gandy [ctb, cph] (Font-Awesome),\n  Ben Sperry [ctb] (Ionicons),\n  Drifty [cph] (Ionicons),\n  Aidan Lister [ctb, cph] (jQuery StickyTabs),\n  Benct Philip Jonsson [ctb, cph] (pagebreak Lua filter),\n  Albert Krewinkel [ctb, cph] (pagebreak Lua filter)",
         "Repository": "RSPM",
         "Date/Publication": "2024-08-17 04:50:13 UTC",
-        "Built": "R 4.4.0; ; 2024-08-18 04:17:30 UTC; unix",
+        "Built": "R 4.4.1; ; 2024-10-24 01:11:24 UTC; unix",
         "RemoteType": "standard",
         "RemotePkgRef": "rmarkdown",
         "RemoteRef": "rmarkdown",
-        "RemoteRepos": "https://pkg.current.posit.team/cran/__linux__/jammy/latest",
+        "RemoteRepos": "https://pkg.current.posit.team/cran/latest",
         "RemoteReposName": "CRAN",
         "RemotePkgPlatform": "source",
         "RemoteSha": "2.28"
@@ -3254,12 +2976,12 @@
         "Maintainer": "Kirill Müller <kirill@cynkra.com>",
         "Repository": "RSPM",
         "Date/Publication": "2023-11-05 10:20:02 UTC",
-        "Built": "R 4.4.0; ; 2024-04-25 19:42:26 UTC; unix",
+        "Built": "R 4.4.1; ; 2024-10-24 01:12:24 UTC; unix",
         "RemoteType": "standard",
         "RemotePkgRef": "rprojroot",
         "RemoteRef": "rprojroot",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
+        "RemoteRepos": "https://pkg.current.posit.team/cran/latest",
+        "RemoteReposName": "CRAN",
         "RemotePkgPlatform": "source",
         "RemoteSha": "2.0.4"
       }
@@ -3286,14 +3008,7 @@
         "Author": "Kevin Ushey [aut, cre],\n  JJ Allaire [aut],\n  Hadley Wickham [aut],\n  Gary Ritchie [aut],\n  RStudio [cph]",
         "Repository": "RSPM",
         "Date/Publication": "2024-03-24 11:30:02 UTC",
-        "Built": "R 4.4.0; ; 2024-04-25 19:43:16 UTC; unix",
-        "RemoteType": "standard",
-        "RemotePkgRef": "rstudioapi",
-        "RemoteRef": "rstudioapi",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
-        "RemotePkgPlatform": "source",
-        "RemoteSha": "0.16.0"
+        "Built": "R 4.4.0; ; 2024-04-25 19:43:16 UTC; unix"
       }
     },
     "rvest": {
@@ -3324,14 +3039,7 @@
         "Maintainer": "Hadley Wickham <hadley@posit.co>",
         "Repository": "RSPM",
         "Date/Publication": "2024-02-12 20:10:02 UTC",
-        "Built": "R 4.4.0; ; 2024-04-25 02:02:56 UTC; unix",
-        "RemoteType": "standard",
-        "RemotePkgRef": "rvest",
-        "RemoteRef": "rvest",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
-        "RemotePkgPlatform": "source",
-        "RemoteSha": "1.0.4"
+        "Built": "R 4.4.0; ; 2024-04-25 02:02:56 UTC; unix"
       }
     },
     "sass": {
@@ -3360,12 +3068,12 @@
         "Maintainer": "Carson Sievert <carson@rstudio.com>",
         "Repository": "RSPM",
         "Date/Publication": "2024-03-15 22:30:02 UTC",
-        "Built": "R 4.4.0; x86_64-pc-linux-gnu; 2024-04-25 19:47:35 UTC; unix",
+        "Built": "R 4.4.1; x86_64-pc-linux-gnu; 2024-10-24 01:05:01 UTC; unix",
         "RemoteType": "standard",
         "RemotePkgRef": "sass",
         "RemoteRef": "sass",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
+        "RemoteRepos": "https://pkg.current.posit.team/cran/latest",
+        "RemoteReposName": "CRAN",
         "RemotePkgPlatform": "source",
         "RemoteSha": "0.4.9"
       }
@@ -3396,14 +3104,7 @@
         "Maintainer": "Thomas Lin Pedersen <thomas.pedersen@posit.co>",
         "Repository": "RSPM",
         "Date/Publication": "2023-11-28 09:10:06 UTC",
-        "Built": "R 4.4.0; ; 2024-04-25 19:45:59 UTC; unix",
-        "RemoteType": "standard",
-        "RemotePkgRef": "scales",
-        "RemoteRef": "scales",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
-        "RemotePkgPlatform": "source",
-        "RemoteSha": "1.3.0"
+        "Built": "R 4.4.0; ; 2024-04-25 19:45:59 UTC; unix"
       }
     },
     "selectr": {
@@ -3430,14 +3131,7 @@
         "Repository": "RSPM",
         "Date/Publication": "2019-11-20 07:30:03 UTC",
         "Encoding": "UTF-8",
-        "Built": "R 4.4.0; ; 2024-04-25 19:49:34 UTC; unix",
-        "RemoteType": "standard",
-        "RemotePkgRef": "selectr",
-        "RemoteRef": "selectr",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
-        "RemotePkgPlatform": "source",
-        "RemoteSha": "0.4-2"
+        "Built": "R 4.4.0; ; 2024-04-25 19:49:34 UTC; unix"
       }
     },
     "snakecase": {
@@ -3494,12 +3188,12 @@
         "License_is_FOSS": "yes",
         "Repository": "RSPM",
         "Date/Publication": "2024-05-06 15:00:02 UTC",
-        "Built": "R 4.4.0; x86_64-pc-linux-gnu; 2024-05-07 04:09:20 UTC; unix",
+        "Built": "R 4.4.1; x86_64-pc-linux-gnu; 2024-10-24 01:13:05 UTC; unix",
         "RemoteType": "standard",
         "RemotePkgRef": "stringi",
         "RemoteRef": "stringi",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
+        "RemoteRepos": "https://pkg.current.posit.team/cran/latest",
+        "RemoteReposName": "CRAN",
         "RemotePkgPlatform": "source",
         "RemoteSha": "1.8.4"
       }
@@ -3531,12 +3225,12 @@
         "Maintainer": "Hadley Wickham <hadley@posit.co>",
         "Repository": "RSPM",
         "Date/Publication": "2023-11-14 23:10:02 UTC",
-        "Built": "R 4.4.0; ; 2024-04-25 19:48:28 UTC; unix",
+        "Built": "R 4.4.1; ; 2024-10-24 01:13:53 UTC; unix",
         "RemoteType": "standard",
         "RemotePkgRef": "stringr",
         "RemoteRef": "stringr",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
+        "RemoteRepos": "https://pkg.current.posit.team/cran/latest",
+        "RemoteReposName": "CRAN",
         "RemotePkgPlatform": "source",
         "RemoteSha": "1.5.1"
       }
@@ -3564,14 +3258,7 @@
         "Maintainer": "Jeroen Ooms <jeroen@berkeley.edu>",
         "Repository": "RSPM",
         "Date/Publication": "2023-05-23 07:50:02 UTC",
-        "Built": "R 4.4.0; x86_64-pc-linux-gnu; 2024-04-25 19:39:28 UTC; unix",
-        "RemoteType": "standard",
-        "RemotePkgRef": "sys",
-        "RemoteRef": "sys",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
-        "RemotePkgPlatform": "source",
-        "RemoteSha": "3.4.2"
+        "Built": "R 4.4.0; x86_64-pc-linux-gnu; 2024-04-25 19:39:28 UTC; unix"
       }
     },
     "systemfonts": {
@@ -3602,12 +3289,12 @@
         "Maintainer": "Thomas Lin Pedersen <thomas.pedersen@posit.co>",
         "Repository": "RSPM",
         "Date/Publication": "2024-05-15 11:10:03 UTC",
-        "Built": "R 4.4.0; x86_64-pc-linux-gnu; 2024-05-16 04:12:52 UTC; unix",
+        "Built": "R 4.4.1; x86_64-pc-linux-gnu; 2024-10-24 01:08:51 UTC; unix",
         "RemoteType": "standard",
         "RemotePkgRef": "systemfonts",
         "RemoteRef": "systemfonts",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
+        "RemoteRepos": "https://pkg.current.posit.team/cran/latest",
+        "RemoteReposName": "CRAN",
         "RemotePkgPlatform": "source",
         "RemoteSha": "1.1.0"
       }
@@ -3638,12 +3325,12 @@
         "Maintainer": "Thomas Lin Pedersen <thomas.pedersen@posit.co>",
         "Repository": "RSPM",
         "Date/Publication": "2024-05-24 09:00:03 UTC",
-        "Built": "R 4.4.0; x86_64-pc-linux-gnu; 2024-05-25 04:09:07 UTC; unix",
+        "Built": "R 4.4.1; x86_64-pc-linux-gnu; 2024-10-24 01:09:10 UTC; unix",
         "RemoteType": "standard",
         "RemotePkgRef": "textshaping",
         "RemoteRef": "textshaping",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
+        "RemoteRepos": "https://pkg.current.posit.team/cran/latest",
+        "RemoteReposName": "CRAN",
         "RemotePkgPlatform": "source",
         "RemoteSha": "0.4.0"
       }
@@ -3679,12 +3366,12 @@
         "Maintainer": "Kirill Müller <kirill@cynkra.com>",
         "Repository": "RSPM",
         "Date/Publication": "2023-03-20 06:30:02 UTC",
-        "Built": "R 4.4.0; x86_64-pc-linux-gnu; 2024-04-25 19:48:31 UTC; unix",
+        "Built": "R 4.4.1; x86_64-pc-linux-gnu; 2024-10-24 01:11:52 UTC; unix",
         "RemoteType": "standard",
         "RemotePkgRef": "tibble",
         "RemoteRef": "tibble",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
+        "RemoteRepos": "https://pkg.current.posit.team/cran/latest",
+        "RemoteReposName": "CRAN",
         "RemotePkgPlatform": "source",
         "RemoteSha": "3.2.1"
       }
@@ -3776,14 +3463,7 @@
         "Maintainer": "Hadley Wickham <hadley@rstudio.com>",
         "Repository": "RSPM",
         "Date/Publication": "2023-02-22 09:20:06 UTC",
-        "Built": "R 4.4.0; ; 2024-04-24 19:17:34 UTC; unix",
-        "RemoteType": "standard",
-        "RemotePkgRef": "tidyverse",
-        "RemoteRef": "tidyverse",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
-        "RemotePkgPlatform": "source",
-        "RemoteSha": "2.0.0"
+        "Built": "R 4.4.0; ; 2024-04-24 19:17:34 UTC; unix"
       }
     },
     "timechange": {
@@ -3836,14 +3516,7 @@
         "Maintainer": "Yihui Xie <xie@yihui.name>",
         "Repository": "RSPM",
         "Date/Publication": "2024-07-18 16:20:02 UTC",
-        "Built": "R 4.4.0; ; 2024-07-19 04:14:15 UTC; unix",
-        "RemoteType": "standard",
-        "RemotePkgRef": "tinytex",
-        "RemoteRef": "tinytex",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
-        "RemotePkgPlatform": "source",
-        "RemoteSha": "0.52"
+        "Built": "R 4.4.0; ; 2024-07-19 04:14:15 UTC; unix"
       }
     },
     "tzdb": {
@@ -3872,14 +3545,7 @@
         "Maintainer": "Davis Vaughan <davis@posit.co>",
         "Repository": "RSPM",
         "Date/Publication": "2023-05-12 23:00:02 UTC",
-        "Built": "R 4.4.0; x86_64-pc-linux-gnu; 2024-04-25 19:47:25 UTC; unix",
-        "RemoteType": "standard",
-        "RemotePkgRef": "tzdb",
-        "RemoteRef": "tzdb",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
-        "RemotePkgPlatform": "source",
-        "RemoteSha": "0.4.0"
+        "Built": "R 4.4.0; x86_64-pc-linux-gnu; 2024-08-28 04:11:28 UTC; unix"
       }
     },
     "usethis": {
@@ -3910,11 +3576,11 @@
         "Maintainer": "Jennifer Bryan <jenny@posit.co>",
         "Repository": "RSPM",
         "Date/Publication": "2024-07-29 07:20:02 UTC",
-        "Built": "R 4.4.0; ; 2024-07-30 04:15:46 UTC; unix",
+        "Built": "R 4.4.1; ; 2024-10-24 01:15:39 UTC; unix",
         "RemoteType": "standard",
         "RemotePkgRef": "usethis",
         "RemoteRef": "usethis",
-        "RemoteRepos": "https://pkg.current.posit.team/cran/__linux__/jammy/latest",
+        "RemoteRepos": "https://pkg.current.posit.team/cran/latest",
         "RemoteReposName": "CRAN",
         "RemotePkgPlatform": "source",
         "RemoteSha": "3.0.0"
@@ -3944,12 +3610,12 @@
         "Maintainer": "Kirill Müller <kirill@cynkra.com>",
         "Repository": "RSPM",
         "Date/Publication": "2023-10-22 21:50:02 UTC",
-        "Built": "R 4.4.0; x86_64-pc-linux-gnu; 2024-04-25 19:46:57 UTC; unix",
+        "Built": "R 4.4.1; x86_64-pc-linux-gnu; 2024-10-24 01:11:37 UTC; unix",
         "RemoteType": "standard",
         "RemotePkgRef": "utf8",
         "RemoteRef": "utf8",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
+        "RemoteRepos": "https://pkg.current.posit.team/cran/latest",
+        "RemoteReposName": "CRAN",
         "RemotePkgPlatform": "source",
         "RemoteSha": "1.2.4"
       }
@@ -3974,14 +3640,7 @@
         "Repository": "RSPM",
         "Date/Publication": "2024-07-29 07:09:22 UTC",
         "Encoding": "UTF-8",
-        "Built": "R 4.4.0; x86_64-pc-linux-gnu; 2024-07-30 04:15:19 UTC; unix",
-        "RemoteType": "standard",
-        "RemotePkgRef": "uuid",
-        "RemoteRef": "uuid",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
-        "RemotePkgPlatform": "source",
-        "RemoteSha": "1.2-1"
+        "Built": "R 4.4.0; x86_64-pc-linux-gnu; 2024-07-30 04:15:19 UTC; unix"
       }
     },
     "vctrs": {
@@ -4011,12 +3670,12 @@
         "Maintainer": "Davis Vaughan <davis@posit.co>",
         "Repository": "RSPM",
         "Date/Publication": "2023-12-01 23:50:02 UTC",
-        "Built": "R 4.4.0; x86_64-pc-linux-gnu; 2024-04-25 19:45:38 UTC; unix",
+        "Built": "R 4.4.1; x86_64-pc-linux-gnu; 2024-10-24 01:07:42 UTC; unix",
         "RemoteType": "standard",
         "RemotePkgRef": "vctrs",
         "RemoteRef": "vctrs",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
+        "RemoteRepos": "https://pkg.current.posit.team/cran/latest",
+        "RemoteReposName": "CRAN",
         "RemotePkgPlatform": "source",
         "RemoteSha": "0.6.5"
       }
@@ -4045,14 +3704,7 @@
         "Author": "Simon Garnier [aut, cre],\n  Noam Ross [ctb, cph],\n  Bob Rudis [ctb, cph],\n  Marco Sciaini [ctb, cph],\n  Antônio Pedro Camargo [ctb, cph],\n  Cédric Scherer [ctb, cph]",
         "Repository": "RSPM",
         "Date/Publication": "2023-05-02 23:50:02 UTC",
-        "Built": "R 4.4.0; ; 2024-04-25 19:40:57 UTC; unix",
-        "RemoteType": "standard",
-        "RemotePkgRef": "viridisLite",
-        "RemoteRef": "viridisLite",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
-        "RemotePkgPlatform": "source",
-        "RemoteSha": "0.4.2"
+        "Built": "R 4.4.0; ; 2024-04-25 19:40:57 UTC; unix"
       }
     },
     "vroom": {
@@ -4085,14 +3737,7 @@
         "Maintainer": "Jennifer Bryan <jenny@posit.co>",
         "Repository": "RSPM",
         "Date/Publication": "2023-12-05 23:50:02 UTC",
-        "Built": "R 4.4.0; x86_64-pc-linux-gnu; 2024-04-25 19:50:04 UTC; unix",
-        "RemoteType": "standard",
-        "RemotePkgRef": "vroom",
-        "RemoteRef": "vroom",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
-        "RemotePkgPlatform": "source",
-        "RemoteSha": "1.6.5"
+        "Built": "R 4.4.0; x86_64-pc-linux-gnu; 2024-08-28 04:12:24 UTC; unix"
       }
     },
     "whisker": {
@@ -4116,12 +3761,12 @@
         "Repository": "RSPM",
         "Date/Publication": "2022-12-05 15:33:50 UTC",
         "Encoding": "UTF-8",
-        "Built": "R 4.4.0; ; 2024-04-25 19:40:49 UTC; unix",
+        "Built": "R 4.4.1; ; 2024-10-24 01:11:59 UTC; unix",
         "RemoteType": "standard",
         "RemotePkgRef": "whisker",
         "RemoteRef": "whisker",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
+        "RemoteRepos": "https://pkg.current.posit.team/cran/latest",
+        "RemoteReposName": "CRAN",
         "RemotePkgPlatform": "source",
         "RemoteSha": "0.4.1"
       }
@@ -4153,11 +3798,11 @@
         "Maintainer": "Lionel Henry <lionel@posit.co>",
         "Repository": "RSPM",
         "Date/Publication": "2024-07-31 11:30:02 UTC",
-        "Built": "R 4.4.0; ; 2024-08-01 04:11:06 UTC; unix",
+        "Built": "R 4.4.1; ; 2024-10-24 01:04:43 UTC; unix",
         "RemoteType": "standard",
         "RemotePkgRef": "withr",
         "RemoteRef": "withr",
-        "RemoteRepos": "https://pkg.current.posit.team/cran/__linux__/jammy/latest",
+        "RemoteRepos": "https://pkg.current.posit.team/cran/latest",
         "RemoteReposName": "CRAN",
         "RemotePkgPlatform": "source",
         "RemoteSha": "3.0.1"
@@ -4188,14 +3833,7 @@
         "Maintainer": "Yihui Xie <xie@yihui.name>",
         "Repository": "RSPM",
         "Date/Publication": "2024-08-17 04:00:03 UTC",
-        "Built": "R 4.4.0; x86_64-pc-linux-gnu; 2024-08-18 04:16:43 UTC; unix",
-        "RemoteType": "standard",
-        "RemotePkgRef": "xfun",
-        "RemoteRef": "xfun",
-        "RemoteRepos": "https://pkg.current.posit.team/cran/__linux__/jammy/latest",
-        "RemoteReposName": "CRAN",
-        "RemotePkgPlatform": "source",
-        "RemoteSha": "0.47"
+        "Built": "R 4.4.0; x86_64-pc-linux-gnu; 2024-08-18 04:16:43 UTC; unix"
       }
     },
     "xml2": {
@@ -4226,12 +3864,12 @@
         "Maintainer": "Hadley Wickham <hadley@posit.co>",
         "Repository": "RSPM",
         "Date/Publication": "2023-12-04 16:30:02 UTC",
-        "Built": "R 4.4.0; x86_64-pc-linux-gnu; 2024-04-25 19:43:21 UTC; unix",
+        "Built": "R 4.4.1; x86_64-pc-linux-gnu; 2024-10-24 01:12:02 UTC; unix",
         "RemoteType": "standard",
         "RemotePkgRef": "xml2",
         "RemoteRef": "xml2",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
+        "RemoteRepos": "https://pkg.current.posit.team/cran/latest",
+        "RemoteReposName": "CRAN",
         "RemotePkgPlatform": "source",
         "RemoteSha": "1.3.6"
       }
@@ -4257,12 +3895,12 @@
         "Repository": "RSPM",
         "Date/Publication": "2024-07-26 15:10:02 UTC",
         "Encoding": "UTF-8",
-        "Built": "R 4.4.0; x86_64-pc-linux-gnu; 2024-07-27 04:56:04 UTC; unix",
+        "Built": "R 4.4.1; x86_64-pc-linux-gnu; 2024-10-24 01:08:04 UTC; unix",
         "RemoteType": "standard",
         "RemotePkgRef": "yaml",
         "RemoteRef": "yaml",
-        "RemoteRepos": "https://colorado.rstudio.com/rspm/all/__linux__/jammy/latest",
-        "RemoteReposName": "REPO_NAME",
+        "RemoteRepos": "https://pkg.current.posit.team/cran/latest",
+        "RemoteReposName": "CRAN",
         "RemotePkgPlatform": "source",
         "RemoteSha": "2.3.10"
       }
@@ -4290,11 +3928,11 @@
         "Maintainer": "Gábor Csárdi <csardi.gabor@gmail.com>",
         "Repository": "RSPM",
         "Date/Publication": "2024-01-27 10:00:02 UTC",
-        "Built": "R 4.4.0; x86_64-pc-linux-gnu; 2024-04-25 19:41:11 UTC; unix",
+        "Built": "R 4.4.1; x86_64-pc-linux-gnu; 2024-10-24 01:15:15 UTC; unix",
         "RemoteType": "standard",
         "RemotePkgRef": "zip",
         "RemoteRef": "zip",
-        "RemoteRepos": "https://pkg.current.posit.team/cran/__linux__/jammy/latest",
+        "RemoteRepos": "https://pkg.current.posit.team/cran/latest",
         "RemoteReposName": "CRAN",
         "RemotePkgPlatform": "source",
         "RemoteSha": "2.3.1"
@@ -4303,7 +3941,7 @@
   },
   "files": {
     "01-raw-data-write.qmd": {
-      "checksum": "c68e59d25cfa186f0bb3b592fe42050b"
+      "checksum": "746a2d24b040e2a3ceec43b313a4f87d"
     }
   },
   "users": null

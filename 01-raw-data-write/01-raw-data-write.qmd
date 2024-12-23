@@ -16,9 +16,9 @@ editor_options:
 
 ## Goals
 
-The goals of this activity are to:
+The goals of this notebook are to:
 
--   Use `{httr2}` to download the raw Washington State Ferries data and weather data, which is used throughout this Workshop
+-   Use `{httr2}` to download the raw Washington State Ferries data and weather data, which is used throughout this project
 -   Write the raw data to a database
 -   Use a simple threshold alert to trigger a notification email
 -   Publish this notebook to Posit Connect and put it on a rendering schedule so database updates happen automatically
@@ -50,30 +50,6 @@ We are using data sets from two main sources, with the aim of gathering historic
 
 We will use the `{httr2}` package to download the data from these API sources.
 
-## Task 1 - Get and set WSDOT environment variable
-
-🔄 Task
-
-We are using an environment variable to access the WSDOT API called **`WSDOT_ACCESS_CODE`**. Visit <https://wsdot.wa.gov/traffic/api/> to get an API key for the use during this workshop.
-
-To save this environment variable in your local development environment, add it to your `.Renviron` file. To do this, run the following command in your R console:
-
-```{r}
-#| eval: false
-usethis::edit_r_environ()
-```
-
-``` {.bash filename=".Renviron"}
-# file: ~/.Renviron
-WSDOT_ACCESS_CODE=PASTE_VALUE_HERE
-```
-
-**Don't forget to restart your session to load your revised environment.**
-
-💡 Remember, the `.Renviron` file does not get deployed with this content, and you should not commit it to git. It is a local file that sets environment variables for your R session. You will be able to set this variable in the "Vars" pane on Connect when you deploy.
-
-Now let's set sail!
-
 ## Load Packages
 
 ```{r}
@@ -90,23 +66,7 @@ library(ferryfairy) #⛴️ A custom package we wrote that is served by Package 
 
 ```
 
-## Task 2 - Download vessel verbose data
-
-🔄 Task
-
-Get the following data set:
-
--   **Vessel Verbose**: the `https://www.wsdot.wa.gov/Ferries/API/Vessels/rest/vesselverbose` endpoint contains data about the ferries in the fleet.
-
-Use `{httr2}` to download the vessel verbose data set from the WSDOT API.
-
-This API takes the form:
-
-`https://www.wsdot.wa.gov/ferries/api/vessels/rest/vesselverbose?apiaccesscode={WSDOT_ACCESS_CODE}`
-
-With `{httr2}` we compose the API request as `<base url>/<path (aka endpoint)>/<query parameters>`
-
-💡 Don't split hairs over what part of your string is captured as the base URL versus the path. Do what makes you happy.
+## Download vessel verbose data
 
 ```{r}
 #| label: download raw vessel data
@@ -122,7 +82,7 @@ req <- request(base_url) |>
 
 # We can inspect the request before performing it
 req
-  
+
 # perform the request
 response <- req |> 
   req_perform()
@@ -144,13 +104,7 @@ vesselinfo_raw <- response_body |> unnest(Class) |>  clean_names()
 vesselinfo_raw
 ```
 
-## Task 3 - Connect to the database
-
-🔄 Task
-
-Create a database connection using the database connection details defined for you by your IT Admin (Workshop Instructors). Avoid hard-coding in any credentials. We're using environment variables here.
-
-We discussed that a database connection can be made using the generic `odbc` package, or a database-specific R package, such as `RPostgres`. The `RPostgres` package is DBI-compliant and is built specifically for PosgreSQL databases. Performance may be faster (particularly for writing data!) than using the generic `odbc` package, and there are more translations available, meaning more dplyr verbs will be available. *However,* because we are in a learning environment for this Workshop, we are choosing to use the `odbc` package so that we can see the database and it's table appear in the RStudio Connections pane. This is a quality of life tradeoff, but if you're doing intensive database work back in the real world, we recommend using a database-specific package, if available.
+## Connect to the database
 
 ```{r}
 #| label: make database connection
@@ -172,23 +126,19 @@ con
 ```
 
 ```{r}
-#| label: alternate
+#| label: alternative 
 
 library(pins)
 board <- board_connect()
 ```
 
-## Task 4 - Write to the database
+## Write to the database
 
-🔄 Task
-
--   Use `dbWriteTable` to write `vesselinfo_raw` into the database
+Use `dbWriteTable` to write `vesselinfo_raw` into the database
 
 ```{r}
 #| label: database write
 #| eval: false
-
-my_username <- "_____" #Fill in your username, workshop participants!
 
 my_df_name <- "vesselinfo_raw"
 
@@ -202,11 +152,7 @@ DBI::dbWriteTable(conn = con, # the connection
 board |> pin_write(vesselinfo_raw)
 ```
 
-## Task 5 - Get and write the other data sets
-
-::: callout-note
-This task is similar to Tasks 3-4 from a Workshop perspective. We will speed through this code and pick up again on the next Task for new material.
-:::
+## Get and write the other data sets
 
 Now we get the following additional data sets:
 
@@ -291,11 +237,11 @@ We'll use a helper function from `{ferryfairy}` for brevity. This is a wrapper a
 #| label: write remaining data to database
 #| eval: false
 
-write_df_to_db(vesselhistory_raw, paste0("vesselhistory_raw_",my_username), con, append = TRUE)
+write_df_to_db(vesselhistory_raw, "vesselhistory_raw", con, append = TRUE)
 
-write_df_to_db(terminallocations, paste0("terminallocations_",my_username), con, overwrite = TRUE)
+write_df_to_db(terminallocations, "terminallocations", con, overwrite = TRUE)
 
-write_df_to_db(weather_terminal_history_raw, paste0("weather_terminal_history_raw_",my_username), con, append = TRUE)
+write_df_to_db(weather_terminal_history_raw, "weather_terminal_history_raw", con, append = TRUE)
 
 # We're done here with the database, so we can close the connection
 dbDisconnect(con)
@@ -312,9 +258,7 @@ board |> pin_write(weather_terminal_history_raw)
 
 ```
 
-## Task 6 - Send an email alert if something is fishy 🐟
-
-🔄 Task
+## Send an email alert if something is fishy 🐟
 
 We will publish this document and schedule it to run daily. However, what if there's something wrong with the data? We want to know about it!
 
@@ -359,26 +303,18 @@ send_email
 
 Fewer rows of raw data were retrieved than expected. The number of records are:
 
-```{r}
-#| echo: false
+- `r nrow(vesselinfo_raw)` rows of raw vessel data
+- `r nrow(vesselhistory_raw)` rows of raw vessel history
+- `r nrow(terminallocations)` terminal location records
+- `r nrow(weather_terminal_history_raw)` rows of weather data
 
-glue("The following number of records were retrieved from the API sources: 
-     
-     {nrow(vesselinfo_raw)} rows of raw vessel data
-     {nrow(vesselhistory_raw)} rows of raw vessel history
-     {nrow(terminallocations)} terminal location records
-     {nrow(weather_terminal_history_raw)} rows of weather data
-     
-     A minumum of {records_threshold} records are expected from each source. Please review the source data.")
+A minimum of `r records_threshold` records are expected from each source. Please review the source data.
 
-```
 :::
 
-## Task 7 - Add logging information to make our scheduled report informative
+## Add logging information to make our scheduled report informative
 
-🔄 Task
-
-Make your scheduled reports work harder for you! Include information that you'll find useful to refer back to. Logging can be as basic or elaborate as you need.
+💡 Make your scheduled reports work harder for you! Include information that you'll find useful to refer back to. Logging can be as basic or elaborate as you need.
 
 Lets include:
 
@@ -403,16 +339,3 @@ glue("Wrote the following to the database:
 
 ```
 
-## Task 8 - Publish and schedule on Posit Connect
-
-🔄 Task
-
--   Connect your account on Posit Connect to Workbench (Tools \> Global Options \> Publishing)
--   Use push-button publishing to publish this document, with source code, to Connect, but remember, it is not good practice to bundle your `.Renviron` file with your deployment. Once the code is deployed to Connect, we will need to input our `WSDOT_API_KEY` in the Connect "Vars" pane. Or we can publish the environment variable value directly using `rsconnect::deployApp(appFiles = c("01-raw-data-write.qmd", "mode_switch.png"), envVars = c("WSDOT_ACCESS_CODE"))`
--   Schedule it to run on a timescale that seems appropriate for the data update cycle
-
-Note: Recall we specified our database connection details with environment variables. Typically when you publish content to Connect, you will also need to supply the environment variables using the "Vars" pane in Connect. For this workshop, these environment variables have already been stored on the Connect server for you so you won't need to do this step for this activity.
-
-We'll do this task together as a group.
-
-For reference, the Connect User Guide provides instructions for publishing: <https://docs.posit.co/connect/user/publishing/#publishing-general>
